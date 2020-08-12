@@ -41,43 +41,44 @@
     border-radius: 2rem;
   }
   
-  .login-button {
+  .button {
       text-align: center;
     color: black;
     background-color: #e8baba;
     border-color: #e8baba;
     width:150px;
-    margin-left: 100px;
+    margin-left: 140px;
 }
-.login-button:hover{
-  background-color: #fad3d9!important;
+.button:hover{
+  background-color: #d4b1b5!important;
   color:black;
   border-color: #e8baba;
 }
 
-.login-button:active{
-  background-color: #fad3d9!important;
+.button:active{
+  background-color: #e8baba !important;
 }
-.login-button:focus{
+.button:focus{
   color:black;
+  background-color: #e8baba!important;
 }
 
-.signup-button{
+.login-link{
   text-align: center;
   color: black;
   background-color: white;
-  border-color: #e8baba ;
+  border-color: #e8baba!important ;
   width:150px;
-  margin:15px 0px 0px 100px;
+  margin:15px 0px 0px 140px;
 }
 
-.signup-button:hover{
-  background-color: #e8baba!important;
+.login-link:hover{
+  background-color: #d4b1b5 !important;
   color:black;
   border-color: #e8baba;
 }
 
-.signup-button:focus{
-  background-color: #f0ebec!important;
+.login-link:focus{
+  background-color: #e8baba!important;
   color:black;
 }
