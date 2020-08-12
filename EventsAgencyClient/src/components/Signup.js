@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import '/home/x.lici/Desktop/eventsagency/EventsAgencyClient/src/components/Signup.css';
+import './Signup.css';
 class Signup extends React.Component{
     render(){
         return(
@@ -34,6 +34,7 @@ class Signup extends React.Component{
                       <button className="btn btn-primary btn-md text-uppercase button" type="submit">Signup</button>
                      <Link to="/login" className=" btn btn-primary text-uppercase login-link">Login</Link>
                     </div> 
+                    
                   </div>
                 </div>
               </div>
