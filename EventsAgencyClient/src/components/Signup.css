@@ -1,5 +1,7 @@
-.form{
-    margin-top:100px;
+
+.signup-form{ 
+  margin: 0 auto;
+  max-width: 100%;
 }
 .card-signin {
     border: 1px solid #e8baba ;
