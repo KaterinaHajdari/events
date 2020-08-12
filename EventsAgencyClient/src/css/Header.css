@@ -1,0 +1,26 @@
+
+.Navbar {  
+     
+     top:10px;
+     left:5px;
+      margin: auto;
+      width: 100%;
+     
+      
+
+}
+
+.NavLink{
+      color:#ffffff !important
+}
+.btn {
+    color: #ffffff;
+      background-color: #e8baba !important;
+      border: #e8baba;
+      font-size: 16px;
+      padding: 10px 40px;
+      text-align: center;
+      
+}
+
+
