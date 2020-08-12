@@ -1,29 +1,24 @@
-import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import Header from './Header'
-import Footer from './Footer';
-import About from './About';
-import{Route} from 'react-router-dom'
-import Home from'./Home'
-const App=()=>{
-return (
-<div> 
-<BrowserRouter>
+import Header from "./Header";
+import Footer from "./Footer";
+import About from "./About";
+import Login from"./Login";
+import Home from "./Home";
+import Signup from "./Signup";
 
-<Header />
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Header />
 
-
-<Route path="/Home"  component={Home}></Route>
-<Route path="/About" component={About}></Route>
-
-        
-
-
-<Footer />
-
-</BrowserRouter>
-</div>
-)
-}
+      <Route path="/Home" component={Home}></Route>
+      <Route path="/About" component={About}></Route>
+      <Route path="/signup" component={Signup} />
+      <Route path="/login" component={Login} />
+      <Footer />
+    </BrowserRouter>
+  );
+};
 export default App;

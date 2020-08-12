@@ -71,7 +71,7 @@ const Header =(props)=> {
                 
               </DropdownMenu>
             </UncontrolledDropdown>
-            <Button>LogOut</Button>
+            <Button> <Link to="/login">LOGIN</Link></Button>
           </Nav>
           
          
