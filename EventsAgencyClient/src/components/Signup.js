@@ -34,6 +34,7 @@ class Signup extends React.Component{
                       <button className="btn btn-primary btn-md text-uppercase button" type="submit">Signup</button>
                      <Link to="/login" className=" btn btn-primary text-uppercase login-link">Login</Link>
                     </div> 
+                    
                   </div>
                 </div>
               </div>

@@ -18,6 +18,7 @@ const Footer = (props) => {
            
           
           </div>
+          
           <div className=" col-md-auto">
             <h6> Rr e Barrikadave, Tirane</h6>
             </div>
@@ -35,6 +36,7 @@ const Footer = (props) => {
             <FontAwesomeIcon icon={['fab', 'twitter']} />
             </div>
             </div>
+            
           
             
             
