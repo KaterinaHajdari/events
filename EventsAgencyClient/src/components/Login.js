@@ -10,7 +10,7 @@ class Login extends React.Component {
             <div class="card card-signin my-5">
               <div class="card-body">
                 <h5 class="card-title text-center">Login</h5>
-                
+                  
                   <div class="form-label-group">
                     <input type="text" id="username" class="form-control" placeholder="Username" required autofocus/>
                     <label for="username"></label>
@@ -25,7 +25,7 @@ class Login extends React.Component {
                   
                   <button className="btn btn-primary text-uppercase login-button" >LOGIN</button>        
                 </div> 
-                <Link className="btn btn-primary text-uppercase signup-button" to="/about">Sign Up</Link>
+                <Link className="btn btn-primary text-uppercase signup-button" to="/signup">Sign Up</Link>
               </div>
             </div>
           </div>

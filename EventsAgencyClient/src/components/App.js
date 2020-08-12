@@ -1,17 +1,18 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter,Route} from 'react-router-dom';
 
 import Header from './Header'
+import Signup from './Signup';
 
 const App=()=>{
 return (
-<div> 
+
 <BrowserRouter>
-<div>
+
 <Header />
-</div>
+    <Route  path="/signup" component={Signup}/>
 </BrowserRouter>
-</div>
+
 )
 }
 export default App;
