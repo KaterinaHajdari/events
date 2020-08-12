@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import './Signup.css';
+import '../css/Signup.css';
 class Signup extends React.Component{
     render(){
         return(

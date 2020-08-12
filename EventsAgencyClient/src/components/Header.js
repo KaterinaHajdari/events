@@ -30,7 +30,7 @@ const Header =(props)=> {
         
           <Nav className="ml-auto" >
             <NavItem>
-              <NavLink> <Link to="/home" activeStyle={{color:"white"}}>Home</Link></NavLink>
+              <NavLink> <Link to="/home" activestyle={{color:"white"}}>Home</Link></NavLink>
             </NavItem>
             <NavItem>
               <NavLink> <Link to="/About">About Us</Link></NavLink>
@@ -41,7 +41,9 @@ const Header =(props)=> {
            
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
+              <Link to="/Admin">
                 Admin
+                </Link>
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
