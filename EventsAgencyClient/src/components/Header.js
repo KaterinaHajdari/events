@@ -18,7 +18,7 @@ import {
 } from 'reactstrap';
 import '../css/Header.css'
 const Header =(props)=> {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   return (
@@ -26,9 +26,9 @@ const Header =(props)=> {
       <Navbar  color="light" light expand="md">
         <NavbarBrand href="/">Logo</NavbarBrand>
         
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} ></NavbarToggler>
         
-          <Nav className="ml-auto" >
+          <Nav className="ml-auto"  >
             <NavItem>
               <NavLink> <Link to="/home" activestyle={{color:"white"}}>Home</Link></NavLink>
             </NavItem>
