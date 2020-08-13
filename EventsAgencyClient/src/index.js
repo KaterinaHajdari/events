@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Provider} from 'react-redux';
-import {createStore} from 'redux';
-import {Route} from 'react-router-dom'
+import {createStore,applyMiddleware,compose} from 'redux';
+import reduxThunk from 'redux-thunk';
+
 import App from './components/App';
-import reducers from './redux/reducers/reducers';
-import Home from './components/Home'
-const store=createStore(reducers);
+import reducers from './redux/reducers';
+
+const composeEnhancers=window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store=createStore(reducers,composeEnhancers(applyMiddleware(reduxThunk)));
 
 ReactDOM.render(
     <Provider store={store}>

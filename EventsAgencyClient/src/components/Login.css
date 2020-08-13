@@ -1,5 +1,6 @@
 .form{
-    margin-top:100px;
+  margin: 50px auto;
+  max-width: 100%;
 }
 .card-signin {
     border: 1px solid #e8baba ;
@@ -47,7 +48,8 @@
     background-color: #e8baba;
     border-color: #e8baba;
     width:150px;
-    margin-left: 100px;
+    margin-bottom: 20px;
+   
 }
 .login-button:hover{
   background-color: #fad3d9!important;
@@ -68,7 +70,7 @@
   background-color: white;
   border-color: #e8baba ;
   width:150px;
-  margin:15px 0px 0px 100px;
+ 
 }
 
 .signup-button:hover{
@@ -78,6 +80,12 @@
 }
 
 .signup-button:focus{
-  background-color: #f0ebec!important;
+  background-color: #fad3d9!important;
   color:black;
+}
+
+.button-parent{
+ display:flex;
+justify-content:center;
+align-items:center;
 }
