@@ -33,12 +33,20 @@ class Signup extends React.Component {
        })
    }
 
-onFormSubmit=(formValues)=>{
-  this.props.createUserProfile(formValues)
+onFormSubmit=(event)=>{
+  event.preventDefault();
+
+  const values={
+    email:this.state.email,
+    username:this.state.email,
+    password:this.state.password
+   
+  }
+  this.props.createUserProfile(values)
 }
   render() {
     return (
-      <div className="signup-form" onSubmit={this.onFormSubmit}>
+      <form className="signup-form" onSubmit={this.onFormSubmit}>
         <div className="row">
           <div className="col-md-4 col-sm-4 col-md-4 mx-auto">
             <div className="card card-signin my-5">
@@ -96,22 +104,24 @@ onFormSubmit=(formValues)=>{
                   <label for="ConfirmPassword"></label>
                 </div>
 
-                <div id="button">
+                <div className="button-parent">
                   <button
-                    className="btn btn-primary btn-md text-uppercase button"
+                    className="btn btn-primary btn-md text-uppercase sign-up"
                     type="submit" >
                     Signup </button>
-                  <Link
+                    </div>
+                    <div className="button-parent">
+                  <Link 
                     to="/login"
                     className=" btn btn-primary text-uppercase login-link"  >
                     Login
                   </Link>
-                </div>
+                  </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     );
   }
 }

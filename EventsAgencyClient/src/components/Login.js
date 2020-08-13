@@ -23,11 +23,13 @@ class Login extends React.Component {
                     <label for="password"></label>
                   </div>
                    
-                  <div id="button">
+                  <div className="button-parent">
                   
                   <button className="btn btn-primary text-uppercase login-button" >LOGIN</button>        
                 </div> 
+                <div className="button-parent">
                 <Link className="btn btn-primary text-uppercase signup-button" to="/signup">Sign Up</Link>
+                </div>
               </div>
             </div>
           </div>
