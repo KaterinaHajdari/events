@@ -1,6 +1,7 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Signup.css";
+import "../css/Signup.css";
 import { connect } from "react-redux";
 import { createUserProfile } from "../redux/actions";
 

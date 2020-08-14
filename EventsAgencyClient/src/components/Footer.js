@@ -26,14 +26,14 @@ const Footer = (props) => {
             <h6> Cel:04 256 478 </h6>
 
             </div>
-            <div class="w-100"></div>
-            <div class="col">
+            <div className="w-100"></div>
+            <div className="col">
              
           <div className="socials">
             
-            <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-            <FontAwesomeIcon icon={['fab', 'instagram']} />
-            <FontAwesomeIcon icon={['fab', 'twitter']} />
+            <FontAwesomeIcon id="element" icon={['fab', 'facebook-f']} />
+            <FontAwesomeIcon id="element" icon={['fab', 'instagram']} />
+            <FontAwesomeIcon id="element" icon={['fab', 'twitter']} />
             </div>
             </div>
             

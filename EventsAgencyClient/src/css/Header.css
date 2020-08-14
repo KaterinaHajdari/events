@@ -1,11 +1,12 @@
 
-.Navbar {  
+.header{  
      
      top:10px;
      left:5px;
       margin: auto;
       width: 100%;
-     
+      display:flex;
+    position: static;
       
 
 }
@@ -13,7 +14,7 @@
 .NavLink{
       color:#ffffff !important
 }
-.btn {
+#login-btn {
     color: #ffffff;
       background-color: #e8baba !important;
       border: #e8baba;
@@ -24,3 +25,13 @@
 }
 
 
+
+.show-nav {
+      height: 120px;
+  }
+  
+  
+  
+  
+     
+  
