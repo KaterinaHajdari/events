@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,Redirect} from "react-router-dom";
 import "./Signup.css";
+import Loading from './Loading';
+import Error from './Error';
 import { connect } from "react-redux";
-import { createUserProfile } from "../redux/actions";
+import { createUserProfile } from "../redux/actions/Signup";
 
 class Signup extends React.Component {
   state = {
@@ -38,14 +40,31 @@ onFormSubmit=(event)=>{
 
   const values={
     email:this.state.email,
-    username:this.state.email,
+    username:this.state.username,
     password:this.state.password
    
   }
   this.props.createUserProfile(values)
 }
   render() {
+
+    const loading=this.props.signup.loading;
+    const error=this.props.signup.error;
+     if(loading & error===null){
+       return  <Loading />
+       
+     }
+     else if( !loading & error===null){
+       return (
+         <Redirect to="/login" />
+       )
+     }
+     else if ( !loading & error!=null){
+       return <Error />
+     } else{
     return (
+    
+    
       <form className="signup-form" onSubmit={this.onFormSubmit}>
         <div className="row">
           <div className="col-md-4 col-sm-4 col-md-4 mx-auto">
@@ -122,8 +141,17 @@ onFormSubmit=(event)=>{
           </div>
         </div>
       </form>
-    );
+      
+    )
+     }
   }
 }
-export default connect(null, {createUserProfile})( Signup);
+
+const mapStateToProps=(state)=>{
+
+  return{
+    signup:state.signup
+  }
+}
+export default connect(mapStateToProps, {createUserProfile})( Signup);
 
