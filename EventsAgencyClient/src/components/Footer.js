@@ -31,9 +31,9 @@ const Footer = (props) => {
              
           <div className="socials">
             
-            <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-            <FontAwesomeIcon icon={['fab', 'instagram']} />
-            <FontAwesomeIcon icon={['fab', 'twitter']} />
+            <FontAwesomeIcon id="element" icon={['fab', 'facebook-f']} />
+            <FontAwesomeIcon id="element" icon={['fab', 'instagram']} />
+            <FontAwesomeIcon id="element" icon={['fab', 'twitter']} />
             </div>
             </div>
             

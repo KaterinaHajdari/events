@@ -1,12 +1,12 @@
 
-.Navbar {  
+.header{  
      
      top:10px;
      left:5px;
       margin: auto;
       width: 100%;
-      position: fixed;
-     
+      display:flex;
+    position: static;
       
 
 }
@@ -14,7 +14,7 @@
 .NavLink{
       color:#ffffff !important
 }
-.btn {
+#login-btn {
     color: #ffffff;
       background-color: #e8baba !important;
       border: #e8baba;
@@ -25,20 +25,13 @@
 }
 
 
+
 .show-nav {
       height: 120px;
   }
   
-  /* Media screen size */
-  @media screen and (min-width: 768px) {
-      button {
-          display: none;
-      }
   
-      .links {
-          height: auto;
-          display: flex;
-      }
+  
   
      
-  }
+  
