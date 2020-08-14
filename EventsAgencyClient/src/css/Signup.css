@@ -1,5 +1,7 @@
-.form{
-    margin-top:10px;
+
+.signup-form{ 
+  margin: 50px auto;
+  max-width: 100%;
 }
 .card-signin {
     border: 1px solid #e8baba ;
@@ -40,25 +42,33 @@
     height: auto;
     border-radius: 2rem;
   }
-  
-  .button {
-      text-align: center;
+
+  .button-parent{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+  }
+ 
+  .sign-up{
+    text-align: center;
     color: black;
-    background-color: #e8baba;
-    border-color: #e8baba;
+    background-color: white;
+    border-color: #e8baba!important ;
     width:150px;
-    margin-left: 140px;
-}
-.button:hover{
-  background-color: #d4b1b5!important;
+    margin-bottom:20px;
+  }
+.sign-up:hover{
+  background-color: #fad3d9!important;
   color:black;
   border-color: #e8baba;
 }
 
-.button:active{
+.sign-up:active{
   background-color: #e8baba !important;
 }
-.button:focus{
+.sign-up:focus{
   color:black;
   background-color: #e8baba!important;
 }
@@ -69,11 +79,11 @@
   background-color: white;
   border-color: #e8baba!important ;
   width:150px;
-  margin:15px 0px 0px 140px;
+
 }
 
 .login-link:hover{
-  background-color: #d4b1b5 !important;
+  background-color: #fad3d9!important;
   color:black;
   border-color: #e8baba;
 }
