@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Route } from "react-router-dom";
 import About from "./About";
+
 import {
   Collapse,
   Navbar,
@@ -34,7 +35,7 @@ const Header =(props)=> {
               <NavLink> <Link to="/About">About Us</Link></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink >Events</NavLink>
+              <NavLink> <Link to="/Events"> Events</Link></NavLink>
             </NavItem>
             <NavItem>
               <NavLink ><Link to="/Admin">Dashboard</Link></NavLink>

@@ -44,7 +44,8 @@ onFormSubmit=(event)=>{
   const values={
     email:this.state.email,
     username:this.state.username,
-    password:this.state.password
+    password:this.state.password,
+    type:"USER"
    
   }
   this.props.createUserProfile(values)

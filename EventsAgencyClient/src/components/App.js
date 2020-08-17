@@ -8,6 +8,8 @@ import Login from"./Login";
 import Home from "./Home";
 import Signup from "./Signup";
 import Admin from "./Admin";
+import Events from "./Events";
+import EventsForm from "./EventsForm";
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,8 +17,10 @@ const App = () => {
       <Route path="/Admin" component={Admin}></Route>
       <Route path="/Home" component={Home}></Route>
       <Route path="/About" component={About}></Route>
+      <Route path="/Events" component={Events}></Route>
       <Route path="/signup" component={Signup} />
       <Route path="/login" component={Login} />
+      <Route path="/eventsform" component={EventsForm}/>
       <Footer/>
     </BrowserRouter>
   );
