@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import "./Login.css";
+import "../css/Login.css";
 import { connect } from "react-redux";
 import {checkLoginValue} from '../redux/actions/Login'
 import Loading from './Loading';
