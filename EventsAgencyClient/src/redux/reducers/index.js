@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
-import signup from './reducers';
-
+import signup from './Signup';
+import login from './Login'
 export default combineReducers({
-    replaceMe:()=>'project',
-    signUp: signup
+
+    signup: signup,
+    login:login
 })
