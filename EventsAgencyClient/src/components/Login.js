@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 import "./Login.css";
 import { connect } from "react-redux";
 import {checkLoginValue} from '../redux/actions/Login'
-
+import Loading from './Loading';
+import Error from './Error'
 class Login extends React.Component {
 
   state={
@@ -34,9 +35,23 @@ class Login extends React.Component {
 
 
   render() {
-     console.log(this.props.login)
+   const loading=this.props.login.loading;
+   const error=this.props.login.error;
+   const isLoggedIn=this.props.login.isLoggedIn;
 
-
+   if(loading && error===null && !isLoggedIn){
+     return <Loading />
+   }
+   else if(!loading && error===null && !isLoggedIn){
+     return <div>Success</div>
+   }
+   else if(!loading && error===null && isLoggedIn){
+     return <div>Admin Page</div>
+   }
+else if(loading && error!==null){
+  return <Error/>
+}
+else{
     return (
         <form class="form"  onSubmit={this.onFormSubmit}>
         <div class="row">
@@ -80,6 +95,8 @@ class Login extends React.Component {
       </form>
     );
   }
+}
+
 }
 
 const mapStateToProps=(state)=>{
