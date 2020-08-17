@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import {checkLoginValue} from '../redux/actions/Login'
 import Loading from './Loading';
 import Error from './Error'
+import Admin from './Admin';
 class Login extends React.Component {
 
   state={
@@ -46,7 +47,7 @@ class Login extends React.Component {
      return <div>Success</div>
    }
    else if(!loading && error===null && isLoggedIn){
-     return <div>Admin Page</div>
+     return <Admin />
    }
 else if(loading && error!==null){
   return <Error/>
