@@ -1,8 +1,11 @@
+
 import React from "react";
 import { Link ,Redirect} from "react-router-dom";
-import "./Signup.css";
+import "../css/Signup.css"
 import Loading from './Loading';
 import Error from './Error';
+
+
 import { connect } from "react-redux";
 import { createUserProfile } from "../redux/actions/Signup";
 
