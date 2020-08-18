@@ -1,46 +1,40 @@
-import React,{ Component } from "react"
-import axios from 'axios'
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { fetchUsers } from "../redux/actions/FetchUser";
 
+function FetchUser({ userData, fetchUsers, loading, error }) {
 
- 
- class FetchUser extends React.Component{
-    
-    constructor(props){
-        super(props)
+  useEffect(() => {
+    fetchUsers();
+  }, []);
 
-        this.state={
-            users:[]
-        }
-    }
-
-    componentDidMount(){
-        axios.get("http://localhost:3001/users")
-        .then(response=>{
-            console.log(response)
-            this.setState({users:response.data
-        })
-        })
-        .catch(error =>{
-            console.log(error)
-        })
-    }
-
-render(){
-    const {users}=this.state
-return(
-    <div>List of users
-    {users.length?
-        users.map(users => <div key={users.id}>{users.title}</div>):
-        null
-
-    }
-    
+console.log(userData)
+  return loading ? (
+    <h2> Loading </h2>
+  ) : error ? (
+    <h2> {error} </h2>
+  ) : (
+    <div>
+      <h2> User List </h2>{" "}
+      <div>
+        {" "}
+        {
+          userData.map((user) => <p> {user.username} </p>)}{" "}
+      </div>{" "}
     </div>
-)
-
+  );
 }
+const mapStateToProps = (state) => {
+  return {
+    userData: state.FetchUser.users,
+    loading: state.loading,
+    error: state.error,
+  };
+};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    fetchUsers: () => dispatch(fetchUsers()),
+  };
+};
 
-
-}
-
-export default FetchUser;
+export default connect(mapStateToProps, mapDispatchToProps)(FetchUser);
