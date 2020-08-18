@@ -5,6 +5,7 @@ import CheckIcon from "@material-ui/icons/Check";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import FetchUser from'./FetchUser'
 const Admin=(props)=> {
   const [dropdownOpen, setOpen] = useState(false);
 
@@ -31,7 +32,7 @@ const Admin=(props)=> {
           <div className="row">
             <div className="col-8">
               <ul>
-                <li>Manager1</li>
+                <li><FetchUser/></li>
               </ul>
             </div>
             <div className="col-4">
