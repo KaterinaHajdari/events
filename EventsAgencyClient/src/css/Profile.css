@@ -1,19 +1,26 @@
 #avatar{
 
-    width:100%;
+    width:20%;
     height:100%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
+    
+    margin-left:350px;
+    
 
 }
 .profile-container{
     height: 100%;
-  width: 100%;
-  display: flex;
+  width: 80%;
+  display: fixed;
   justify-content: center;
   align-items: center;
-  margin-top:50px;
+  margin-left:100px;
+  margin-bottom: 300px;
+}
+.contain{
+    height: 150px;
+    padding: 10px;
+    margin-left:250px;
+color:#e8baba;
 }
 
 #edit-btn{
@@ -22,5 +29,18 @@
     background-color: #e8baba;
     border-color: #e8baba;
     width:150px;
-    margin-bottom: 20px;
+    display: inline-block;
+    
+    margin-left: 350px;
+}
+
+#editP-btn{
+    text-align: center;
+    color:white;
+    background-color: #e8baba;
+    border-color: #e8baba;
+    width:150px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 100px;
 }
