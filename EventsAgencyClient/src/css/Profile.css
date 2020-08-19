@@ -20,7 +20,7 @@
     height: 150px;
     padding: 10px;
     margin-left:250px;
-color:#e8baba;
+color:#df9f9f;
 }
 
 #edit-btn{
@@ -37,8 +37,8 @@ color:#e8baba;
 #editP-btn{
     text-align: center;
     color:white;
-    background-color: #e8baba;
-    border-color: #e8baba;
+    background-color: #df9f9f;
+    border-color: #df9f9f;
     width:150px;
     display: inline-block;
     margin-top: 10px;
