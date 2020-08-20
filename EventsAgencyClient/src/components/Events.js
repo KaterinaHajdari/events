@@ -32,7 +32,7 @@ class Events extends React.Component{
                <Row className="row-style">
                    <Col xs="9">
                    <div className="col-style" >
-                       <h1>Birthday Party</h1>
+                       <h1>Bussiness Events</h1>
                        <Link 
                     to="/eventsform"
                     className=" btn btn-primary text-uppercase events-link"  >
@@ -48,7 +48,7 @@ class Events extends React.Component{
                    <Col xs="3"><img src={Birthday} alt="birthdayPhoto"  className="photoStyle" style={{height:"90%"}}/></Col>
                    <Col xs="auto">
                    <div className="col-style" >
-                       <h1>Bussiness Events</h1>
+                       <h1>Birthday Party</h1>
                        <Link 
                     to="/eventsform"
                     className=" btn btn-primary text-uppercase events-link"  >
