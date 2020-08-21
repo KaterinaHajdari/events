@@ -40,6 +40,9 @@ const Header =(props)=> {
             <NavItem>
               <NavLink ><Link to="/Admin">Dashboard</Link></NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink ><Link to="/Manager">Manager</Link></NavLink>
+            </NavItem>
            
           
             <UncontrolledDropdown nav inNavbar>

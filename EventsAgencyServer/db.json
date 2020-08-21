@@ -4,37 +4,78 @@
       "email": "xheni@gmail.com",
       "username": "xheni@gmail.com",
       "password": "12",
-      "id": 1
+      "id": 1,
+      "role": 3
     },
     {
       "email": "xhenilici14@gmail.com",
       "username": "xhenilici14@gmail.com",
       "password": "12",
-      "id": 2
+      "id": 2,
+      "role": 2
     },
     {
       "email": "xheni@gmail.com",
       "username": "xheni@gmail.com",
       "password": "12",
-      "id": 3
+      "id": 3,
+      "role": 3
     },
     {
       "email": "x@gmail.com",
       "username": "x@gmail.com",
       "password": "12",
-      "id": 4
+      "id": 4,
+      "role": 3
     },
     {
       "email": "x@gmail.com",
       "username": "x@gmail.com",
       "password": "11",
-      "id": 5
+      "id": 5,
+      "role": 3
     },
     {
       "email": "sigi@gmail.com",
       "username": "sigi",
       "password": "sigi22",
-      "id": 6
+      "id": 6,
+      "role": 3
+    },
+    {
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "admin",
+      "id": 6,
+      "role": 1
+    },
+    {
+      "email": "manager@gmail.com",
+      "username": "manager",
+      "password": "manager",
+      "id": 6,
+      "role": 2
+    },
+    {
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "admin",
+      "type": "USER",
+      "id": 7
+    },
+    {
+      "email": "useruser@gmail.com",
+      "username": "user@gmail.com",
+      "password": "1",
+      "type": "USER",
+      "id": 8
+    },
+    {
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "admin",
+      "type": "USER",
+      "id": 9
     }
   ]
 }

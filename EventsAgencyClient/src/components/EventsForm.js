@@ -3,6 +3,12 @@ import { Form, Col, Button } from "react-bootstrap";
 import "../css/EventsForm.css";
 
 class EventsForm extends React.Component {
+  state={
+    name:'',
+    date:'',
+    time:'',
+    participants:''
+  }
   render() {
     return (
       <div className="containerForm">
