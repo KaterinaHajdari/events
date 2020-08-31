@@ -10,6 +10,8 @@ import Signup from "./Signup";
 import Admin from "./Admin";
 import Events from "./Events";
 import EventsForm from "./EventsForm";
+import Profile from"./Profile";
+import EditProfile from "./EditProfile"
 const App = () => {
   return (
     <BrowserRouter>
@@ -20,6 +22,8 @@ const App = () => {
       <Route path="/Events" component={Events}></Route>
       <Route path="/signup" component={Signup} />
       <Route path="/login" component={Login} />
+      <Route path="/Profile" component={Profile} />
+      <Route path="/editProfile" component={EditProfile} />
       <Route path="/eventsform" component={EventsForm}/>
       <Footer/>
     </BrowserRouter>

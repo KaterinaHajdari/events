@@ -48,7 +48,9 @@ const Header =(props)=> {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  Profile
+
+                  <Link to="/Profile"> Profile</Link>
+                
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem >
