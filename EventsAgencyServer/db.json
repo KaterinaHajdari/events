@@ -35,6 +35,48 @@
       "username": "sigi",
       "password": "sigi22",
       "id": 6
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-08-18",
+      "time": "",
+      "participants": "1",
+      "details": "",
+      "id": 7
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-08-18",
+      "time": "",
+      "participants": "1",
+      "details": "",
+      "id": 8
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-08-18",
+      "time": "",
+      "participants": "1",
+      "details": "",
+      "id": 9
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-08-18",
+      "time": "",
+      "participants": "1",
+      "details": "",
+      "id": 10
+    }
+  ],
+  "events": [
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-08-25",
+      "time": "",
+      "participants": "2",
+      "details": "",
+      "id": 1
     }
   ]
 }
