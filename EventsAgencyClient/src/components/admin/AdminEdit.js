@@ -1,18 +1,18 @@
 import React from "react";
-import avatar from "../avatar.png";
+import avatar from "../../avatar.png";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import "../css/Profile.css";
-import "../css/Header.css";
-import { Button } from "reactstrap";
-import Header from "./Header";
+import "../../css/Profile.css";
+import "../../css/Header.css";
+import { Button,Form } from "reactstrap";
+import AdminHeader from './AdminHeader';
 class Profile extends React.Component {
   render() {
     return (
-      <div>
-        <Header/>
+     <Form>
+       <AdminHeader />
       <div className="profile-container">
-        
+         
         <Container>
 
           <Row>
@@ -53,7 +53,8 @@ class Profile extends React.Component {
           </Row>
         </Container>
       </div>
-      </div>
+      </Form>
+    
     );
   }
 }

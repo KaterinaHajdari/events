@@ -1,17 +1,19 @@
 import React,{ useState} from "react";
-import { Link } from "react-router-dom";
-import "../css/Admin.css";
+
+import "../../css/Admin.css";
 import CheckIcon from "@material-ui/icons/Check";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import FetchUser from'./FetchUser'
+import AdminHeader from "./AdminHeader";
+import FetchUser from'../FetchUser'
 const Admin=(props)=> {
   const [dropdownOpen, setOpen] = useState(false);
 
   const toggle = () => setOpen(!dropdownOpen);
     return (
       <div>
+        <AdminHeader />
         <h4 id="title">Site Administration</h4>
         <div className="mini-nav">
 
