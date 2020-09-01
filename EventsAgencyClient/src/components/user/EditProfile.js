@@ -1,9 +1,9 @@
 import React from "react";
 import { Input } from "reactstrap";
-import avatar from "../avatar.png";
+import avatar from "../../avatar.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "reactstrap";
-import "../css/Profile.css";
+import "../../css/Profile.css";
 class EditProfile extends React.Component {
   render() {
     return (
@@ -11,7 +11,7 @@ class EditProfile extends React.Component {
         <Container>
           <Row>
             <Col md={6}>
-              <img src={avatar} id="avatar" />
+              <img src={avatar} id="avatar" alt="avatar"/>
             </Col>
           </Row>
           <div className="contain">
