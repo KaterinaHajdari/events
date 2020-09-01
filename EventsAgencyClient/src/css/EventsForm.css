@@ -1,6 +1,6 @@
 .containerForm{
-  height: 100%;
-  width: 50%;
+    height: 100%;
+    width: 50%;
 margin: auto;
 margin-top: 50px;
 
@@ -11,17 +11,17 @@ border-color: #e8baba;
 padding: 50px 100px 50px 100px;
 }
 .labels{
-  color:#df8888;
- 
+    color:#df8888;
+   
 }
 
 #button{
-  text-align: center;
-  color: white;
-  background-color: #e8baba;
-  border-color: #e8baba;
-  width:150px;
-  display: inline-block;
-  
-  margin-left: 400px;
+    text-align: center;
+    color: white;
+    background-color: #e8baba;
+    border-color: #e8baba;
+    width:150px;
+    display: inline-block;
+    
+    margin-left: 400px;
 }
