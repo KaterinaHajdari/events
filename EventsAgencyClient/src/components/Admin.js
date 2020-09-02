@@ -35,15 +35,7 @@ const Admin=(props)=> {
                 <li><FetchUser/></li>
               </ul>
             </div>
-            <div className="col-4">
-              <IconButton aria-label="delete">
-                <DeleteIcon />
-              </IconButton>
-
-              <IconButton aria-label="check">
-                <CheckIcon />
-              </IconButton>
-            </div>
+            
           </div>
         </div>
 
