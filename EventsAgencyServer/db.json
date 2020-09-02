@@ -35,6 +35,39 @@
       "username": "sigi",
       "password": "sigi22",
       "id": 6
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-07",
+      "time": "16:47",
+      "participants": "4",
+      "details": "",
+      "id": 7
+    }
+  ],
+  "events": [
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-14",
+      "time": "15:49",
+      "participants": "2",
+      "details": "",
+      "id": 1
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-04",
+      "time": "12:28",
+      "participants": "20",
+      "details": "òljlugyt",
+      "id": 2
+    }
+  ],
+  "managers": [
+    {
+      "username": "manager",
+      "password": "manager",
+      "id": 1
     }
   ]
 }

@@ -1,5 +1,3 @@
-import users from '../apis/users';
-
 export default function(state = {}, action){
 
     switch(action.type){

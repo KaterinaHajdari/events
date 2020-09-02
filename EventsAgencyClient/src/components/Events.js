@@ -10,10 +10,13 @@ import WeddingPhoto from '../weddingphoto.jpg';
 import Bussiness from '../bussiness.jpg';
 import Birthday from '../birthday.jpg';
 import { Link } from 'react-router-dom';
+import Header from "./Header";
 class Events extends React.Component{
 
     render(){
         return(
+            <div>
+                <Header/>
            <Container>
                <Row className="row-style">
                    <Col xs="3"><img src={WeddingPhoto} alt="weddingPhoto" className="photoStyle" /></Col>
@@ -58,6 +61,7 @@ class Events extends React.Component{
                    </Col>
                </Row>
            </Container>
+           </div>
         )
     }
 }

@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 import "../css/Admin.css";
 
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import FetchUser from'./FetchUser'
+import AdminHeader from "./AdminHeader";
+import FetchUser from'../FetchUser'
 const Admin=(props)=> {
   const [dropdownOpen, setOpen] = useState(false);
 
   const toggle = () => setOpen(!dropdownOpen);
     return (
       <div>
+        <AdminHeader />
         <h4 id="title">Site Administration</h4>
         <div className="mini-nav">
 

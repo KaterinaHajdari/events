@@ -3,8 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "../css/EventsForm.css";
 import {connect} from "react-redux";
 import {createEventReservation} from "../redux/actions/CreateEvent"
-import Loading from "./Loading";
-import Error from "./Error";
+import Header from "./Header";
 class EventsForm extends React.Component {
    state={
      eventType:'',
@@ -60,6 +59,8 @@ class EventsForm extends React.Component {
     
 
     return (
+      <div>
+        <Header/>
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
             <div class="card card-signin my-5">
           <div class="card-body">
@@ -128,7 +129,7 @@ class EventsForm extends React.Component {
       </div >
       </div>
       </div>
-    
+    </div>
       )
     }    
   }

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, Route } from "react-router-dom";
 
-
 import {
   Collapse,
   Navbar,
@@ -17,8 +16,8 @@ import {
   
   Button
 } from 'reactstrap';
-import '../css/Header.css'
-const Header =(props)=> {
+import '../../css/Header.css'
+const AdminHeader =(props)=> {
   
   return (
     <div>
@@ -49,10 +48,17 @@ const Header =(props)=> {
               <DropdownMenu right>
                 <DropdownItem>
 
-                  <Link to="/Profile"> Profile</Link>
+                  <Link to="/adminedit"> Profile</Link>
                 
                 </DropdownItem>
                 <DropdownItem divider />
+                <DropdownItem>
+
+                  <Link to="/addmanager"> Add Manager</Link>
+                
+                </DropdownItem>
+                <DropdownItem divider />
+
                 <DropdownItem >
                  LogOut
                 </DropdownItem>
@@ -60,7 +66,7 @@ const Header =(props)=> {
                 
               </DropdownMenu>
             </UncontrolledDropdown>
-            <Button id="login-btn"> <Link to="/login">LOGIN</Link></Button>
+         
           </Nav>
           
          
@@ -71,6 +77,6 @@ const Header =(props)=> {
   ;
   
 }
-export default Header;
+export default AdminHeader;
 
 
