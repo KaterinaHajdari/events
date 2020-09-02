@@ -4,9 +4,12 @@ import avatar from "../../avatar.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { Button } from "reactstrap";
 import "../../css/Profile.css";
+import HeaderTwo from "../HeaderTwo";
 class EditProfile extends React.Component {
   render() {
     return (
+      <div>
+        <HeaderTwo />
       <div className="profile-container">
         <Container>
           <Row>
@@ -48,6 +51,7 @@ class EditProfile extends React.Component {
 
           
         </Container>
+      </div>
       </div>
     );
   }

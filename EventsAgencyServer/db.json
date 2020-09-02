@@ -61,6 +61,22 @@
       "participants": "20",
       "details": "òljlugyt",
       "id": 2
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-07",
+      "time": "19:37",
+      "participants": "5",
+      "details": "",
+      "id": 3
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-07",
+      "time": "19:37",
+      "participants": "5",
+      "details": "",
+      "id": 4
     }
   ],
   "managers": [

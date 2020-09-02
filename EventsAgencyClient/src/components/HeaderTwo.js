@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { Link, Route } from "react-router-dom";
+import React from 'react';
+import { Link, Redirect } from "react-router-dom";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -16,13 +14,22 @@ import {
   Button
 } from 'reactstrap';
 import '../css/Header.css'
-const Header =(props)=> {
-  
+class HeaderTwo extends React.Component{
+    state={
+        redirect:false
+    }
+    logUserOut=()=>{
+        localStorage.clear();
+        this.setState({ redirect:true })
+    }
+  render(){
+      if(this.state.redirect){
+          return <Redirect to="/" />
+      }
   return (
     <div>
       <Navbar className="Navbar" color="light" light expand="md">
         <NavbarBrand href="/">Logo</NavbarBrand>
-      
           <Nav className="ml-auto"  >
             <NavItem>
               <NavLink> <Link to="/home" activestyle={{color:"white"}}>Home</Link></NavLink>
@@ -53,11 +60,12 @@ const Header =(props)=> {
               </DropdownMenu>
             </UncontrolledDropdown>
             <Button id="login-btn"> <Link to="/login">LOGIN</Link></Button>
+            <Button id="login-btn" onClick={this.logUserOut}>Logout</Button>
           </Nav>
       </Navbar>
     </div>
-    );
+  )
 }
-export default Header;
+}
 
-
+export default HeaderTwo;

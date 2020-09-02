@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, Route } from "react-router-dom";
-
+import {adminLogOut} from "../../redux/actions/Login";
+import {connect} from "react-redux";
 import {
-  Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -17,8 +17,13 @@ import {
   Button
 } from 'reactstrap';
 import '../../css/Header.css'
-const AdminHeader =(props)=> {
-  
+
+class AdminHeader extends React.Component{
+
+  logout=()=>{
+   this.props.adminLogOut();
+  }
+  render(){
   return (
     <div>
       <Navbar className="Navbar" color="light" light expand="md">
@@ -59,7 +64,7 @@ const AdminHeader =(props)=> {
                 </DropdownItem>
                 <DropdownItem divider />
 
-                <DropdownItem >
+                <DropdownItem onClick={this.logout}>
                  LogOut
                 </DropdownItem>
                 
@@ -74,9 +79,9 @@ const AdminHeader =(props)=> {
       </Navbar>
     </div>
     )
-  ;
-  
+  }
 }
-export default AdminHeader;
+
+export default connect(null, {adminLogOut})(AdminHeader);
 
 

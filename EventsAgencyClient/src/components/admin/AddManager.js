@@ -26,7 +26,8 @@ class AddManager extends React.Component{
 
        const managerValues={
          username:this.state.username,
-         password:this.state.password
+         password:this.state.password,
+         type:"manager"
        }
 
        this.props.createManagerProfile(managerValues);

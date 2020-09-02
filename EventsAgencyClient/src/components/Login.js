@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom';
 import "../css/Login.css";
 import { connect } from "react-redux";
-import {checkLoginValue} from '../redux/actions/Login'
+import {checkLoginValue} from '../redux/actions/Login';
 import Loading from './Loading';
 import Error from './Error'
 import Admin from './admin/Admin';

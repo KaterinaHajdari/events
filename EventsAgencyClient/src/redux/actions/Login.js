@@ -1,8 +1,8 @@
 import users from '../apis/users';
+import managers from "../apis/managers";
 
 export const checkLoginValue = loginValues => async dispatch => {
-    
-   
+     
  dispatch({type: "LOGIN_BEGIN"});
   if(loginValues.username==="admin" && loginValues.password==="admin"){
       dispatch({type:"LOGIN_ADMIN_SUCCESS"})
@@ -11,8 +11,13 @@ export const checkLoginValue = loginValues => async dispatch => {
     const response = await users.get("/users?username="+loginValues.username+"&password="+loginValues.password)
     .then(res => {
      if(loginValues.username===res.data[0].username && loginValues.password===res.data[0].password){
-        dispatch({type: "LOGIN_SUCCESS",  payload: loginValues});
-        
+          localStorage.setItem("id", res.data[0].id);
+          localStorage.setItem("username", res.data[0].username);
+          localStorage.setItem("email", res.data[0].email);
+          localStorage.setItem("type", "user");
+          localStorage.setItem("password", res.data[0].password);
+
+        dispatch({type: "LOGIN_SUCCESS",  payload: loginValues});      
      }
      else{
         dispatch({type: "LOGIN_FAILURE", payload: {error:"wrong credentials"}});
@@ -21,3 +26,27 @@ export const checkLoginValue = loginValues => async dispatch => {
    
 }
 }
+
+export const loginUserLocalStorage = savedUserValues => async dispatch=>{
+   dispatch({type:"LOGIN_SUCCESS", payload:savedUserValues})
+}
+
+export const adminLogOut =()=> dispatch =>{
+   dispatch({type:"ADMIN_LOG_OUT"});
+}
+ { /*
+    export const checkManagerLoginValues= loginValues=>async dispatch=>{
+   dispatch({type:"LOGIN_MANAGER_BEGIN"})
+   const response=await managers.get("/managers?username="+loginValues.username+"&password="+loginValues.password)
+   .then(res=>{
+      if(loginValues.username===res.data[0].username && loginValues.password===res.data[0].password){
+         dispatch({type:"LOGIN_MANAGER_SUCCESS", payload:loginValues});
+      }
+      else{
+        dispatch({type:"LOGIN_MANAGER_FAILURE", payload:{error:"wrong credentials"}})
+      }
+   })
+}
+*/ }
+
+
