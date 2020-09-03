@@ -11,10 +11,13 @@ class Dashboard extends React.Component{
             <>
             <Header/>
             <Switch>
+                { /*
                   <PrivateRoute path="/dashboard/editProfile" component={EditProfile} />
+                */}
                   <PrivateRoute path="/dashboard/eventsform" component={EventsForm}/>
             </Switch>
             </>
         )
     }
 }
+export default Dashboard;

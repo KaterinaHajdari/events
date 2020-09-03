@@ -26,12 +26,14 @@ class PrivateRoute extends React.Component{
           render={props=>{
               if(this.props.login.values.id!==0){
                   return <Component {...props} />
-              }
+              } 
+              /*
               else if(this.props.login.values.id===0 && typeof JSON.parse(localStorage.getItem("id"))==="number"){
                   this.login();
                   return <Component  {...props}/>
 
               }
+            */  
               else{
                 return <Redirect  to={{pathname:'/login' }} />
               }
@@ -40,3 +42,10 @@ class PrivateRoute extends React.Component{
         )
     }
 }
+
+function mapStateToProps(state){
+    return{
+        login:state.login
+    }
+}
+export default connect(mapStateToProps, {loginUserLocalStorage})(PrivateRoute);

@@ -1,12 +1,12 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import {Link,Redirect} from 'react-router-dom';
 import "../css/Login.css";
 import { connect } from "react-redux";
 import {checkLoginValue} from '../redux/actions/Login';
 import Loading from './Loading';
 import Error from './Error'
 import Admin from './admin/Admin';
-import Header from "./Header";
+import HeaderLogin from "./HeaderLogin";
 class Login extends React.Component {
 
   state={
@@ -45,7 +45,7 @@ class Login extends React.Component {
      return <Loading />
    }
    else if(!loading && error===null && !isLoggedIn){
-     return <div>Success</div>
+     return <Redirect to="/events" />
    }
    else if(!loading && error===null && isLoggedIn){
      return <Admin />
@@ -56,7 +56,7 @@ else if(loading && error!==null){
 else{
     return (
       <div>
-        <Header/>
+        <HeaderLogin/>
         <form class="form"  onSubmit={this.onFormSubmit}>
         <div class="row">
           <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -89,9 +89,7 @@ else{
                   
                   <button className="btn btn-primary text-uppercase login-button" >LOGIN</button>        
                 </div> 
-                <div className="button-parent">
-                <Link className="btn btn-primary text-uppercase signup-button" to="/signup">Sign Up</Link>
-                </div>
+                <Link to="/login-manager" style={{display:"flex",justifyContent:"center", alignItems:"center"}}>Login as manager </Link>
               </div>
             </div>
           </div>

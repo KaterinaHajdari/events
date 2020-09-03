@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Route } from "react-router-dom";
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
