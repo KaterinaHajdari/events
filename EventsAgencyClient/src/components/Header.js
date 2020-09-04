@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Route } from "react-router-dom";
-
-
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -24,9 +20,7 @@ const Header =(props)=> {
     <div>
       <Navbar className="Navbar" color="light" light expand="md">
         <NavbarBrand href="/">Logo</NavbarBrand>
-        
-        
-        
+      
           <Nav className="ml-auto"  >
             <NavItem>
               <NavLink> <Link to="/home" activestyle={{color:"white"}}>Home</Link></NavLink>
@@ -40,8 +34,6 @@ const Header =(props)=> {
             <NavItem>
               <NavLink ><Link to="/Admin">Dashboard</Link></NavLink>
             </NavItem>
-           
-          
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                username
@@ -56,20 +48,13 @@ const Header =(props)=> {
                 <DropdownItem >
                  LogOut
                 </DropdownItem>
-                
-                
               </DropdownMenu>
             </UncontrolledDropdown>
             <Button id="login-btn"> <Link to="/login">LOGIN</Link></Button>
           </Nav>
-          
-         
-        
       </Navbar>
     </div>
-    )
-  ;
-  
+    );
 }
 export default Header;
 
