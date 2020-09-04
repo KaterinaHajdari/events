@@ -41,13 +41,17 @@ class ManagerDashboard extends React.Component {
           this.state.eventsList.map(
             (event) => 
             <li id={event.id} >
-             Type:  {event.eventType}  <span />Date:  {event.date}  Time:  {event.time}  Participants:  {event.participants}  Details:   {event.details}
+             Type:   {event.eventType}  <span style={{display:"inline-block", width:"50px"}} />
+             Date:  {event.date} <span style={{display:"inline-block", width:"50px"}} />
+             Time:  {event.time}  <span style={{display:"inline-block", width:"50px"}} />
+             Participants:  {event.participants}  <span style={{display:"inline-block", width:"50px"}} />
+              Details: {event.details}  <span style={{display:"inline-block", width:"50px"}} />
              
-              <IconButton aria-label="delete">
+              <IconButton aria-label="delete" style={{color:"red", width:"30px"}}>
                 <DeleteIcon />
               </IconButton>
 
-              <IconButton aria-label="check">
+              <IconButton aria-label="check" style={{color:"green"}}>
                 <CheckIcon />
               </IconButton>
          
