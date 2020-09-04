@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import "../css/EventsForm.css";
 import {connect} from "react-redux";
 import {createEventReservation} from "../redux/actions/CreateEvent"
-import Header from "./Header";
+import HeaderTwo from "./HeaderTwo";
 class EventsForm extends React.Component {
    state={
      eventType:'',
@@ -51,7 +51,8 @@ class EventsForm extends React.Component {
         date:this.state.date,
         time:this.state.time,
         participants:this.state.participants,
-        details:this.state.details
+        details:this.state.details,
+        approved:0
     }
       this.props.createEventReservation(eventValues);
   }
@@ -60,7 +61,7 @@ class EventsForm extends React.Component {
 
     return (
       <div>
-        <Header/>
+        <HeaderTwo/>
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
             <div class="card card-signin my-5">
           <div class="card-body">
@@ -74,7 +75,8 @@ class EventsForm extends React.Component {
                type="select" name="selectEvent" id="eventType"
                   value={this.state.eventType}
                   onChange={this.setEventType}
-               >
+               > 
+               
                   <option>Event Type</option>
       <option>Birthday Event</option>
       <option>Wedding Event </option>

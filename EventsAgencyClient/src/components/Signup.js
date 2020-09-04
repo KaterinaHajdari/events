@@ -1,14 +1,11 @@
-
 import React from "react";
 import { Link ,Redirect} from "react-router-dom";
 import "../css/Signup.css"
 import Loading from './Loading';
 import Error from './Error';
-
-
 import { connect } from "react-redux";
 import { createUserProfile } from "../redux/actions/Signup";
-
+import Header from "./Header"
 class Signup extends React.Component {
   state = {
     email: "",
@@ -67,8 +64,8 @@ onFormSubmit=(event)=>{
        return <Error />
      } else{
     return (
-    
-    
+    <>
+    <Header/>
       <form className="signup-form" onSubmit={this.onFormSubmit}>
         <div className="row">
           <div className="col-md-4 col-sm-4 col-md-4 mx-auto">
@@ -145,7 +142,7 @@ onFormSubmit=(event)=>{
           </div>
         </div>
       </form>
-      
+      </>
     )
      }
   }

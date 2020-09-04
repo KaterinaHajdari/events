@@ -4,18 +4,6 @@
       "email": "xheni@gmail.com",
       "username": "xheni@gmail.com",
       "password": "12",
-      "id": 1
-    },
-    {
-      "email": "xhenilici14@gmail.com",
-      "username": "xhenilici14@gmail.com",
-      "password": "12",
-      "id": 2
-    },
-    {
-      "email": "xheni@gmail.com",
-      "username": "xheni@gmail.com",
-      "password": "12",
       "id": 3
     },
     {
@@ -25,24 +13,10 @@
       "id": 4
     },
     {
-      "email": "x@gmail.com",
-      "username": "x@gmail.com",
-      "password": "11",
-      "id": 5
-    },
-    {
       "email": "sigi@gmail.com",
       "username": "sigi",
       "password": "sigi22",
       "id": 6
-    },
-    {
-      "eventType": "Birthday Event",
-      "date": "2020-09-07",
-      "time": "16:47",
-      "participants": "4",
-      "details": "",
-      "id": 7
     }
   ],
   "events": [
@@ -55,12 +29,22 @@
       "id": 1
     },
     {
-      "eventType": "Birthday Event",
-      "date": "2020-09-04",
-      "time": "12:28",
-      "participants": "20",
-      "details": "òljlugyt",
+      "eventType": "Wedding Event",
+      "date": "2020-09-06",
+      "time": "01:02",
+      "participants": "7",
+      "details": "",
+      "approved": 0,
       "id": 2
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-28",
+      "time": "05:03",
+      "participants": "7",
+      "details": "",
+      "approved": 0,
+      "id": 3
     }
   ],
   "managers": [
@@ -68,6 +52,12 @@
       "username": "manager",
       "password": "manager",
       "id": 1
+    },
+    {
+      "username": "user1",
+      "password": "Apple123!!",
+      "type": "manager",
+      "id": 2
     }
   ]
 }

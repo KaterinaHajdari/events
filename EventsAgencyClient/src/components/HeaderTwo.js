@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { Link, Route } from "react-router-dom";
-import {adminLogOut} from "../../redux/actions/Login";
-import {connect} from "react-redux";
+import React from 'react';
+import { Link, Redirect } from "react-router-dom";
 import {
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -16,21 +13,23 @@ import {
   
   Button
 } from 'reactstrap';
-import '../../css/Header.css'
-
-class AdminHeader extends React.Component{
-
-  logout=()=>{
-   this.props.adminLogOut();
-  }
+import '../css/Header.css'
+class HeaderTwo extends React.Component{
+    state={
+        redirect:false
+    }
+    logUserOut=()=>{
+        localStorage.clear();
+        this.setState({ redirect:true })
+    }
   render(){
+      if(this.state.redirect){
+          return <Redirect to="/" />
+      }
   return (
     <div>
       <Navbar className="Navbar" color="light" light expand="md">
         <NavbarBrand href="/">Logo</NavbarBrand>
-        
-        
-        
           <Nav className="ml-auto"  >
             <NavItem>
               <NavLink> <Link to="/home" activestyle={{color:"white"}}>Home</Link></NavLink>
@@ -44,8 +43,6 @@ class AdminHeader extends React.Component{
             <NavItem>
               <NavLink ><Link to="/Admin">Dashboard</Link></NavLink>
             </NavItem>
-           
-          
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                username
@@ -53,35 +50,22 @@ class AdminHeader extends React.Component{
               <DropdownMenu right>
                 <DropdownItem>
 
-                  <Link to="/adminedit"> Profile</Link>
+                  <Link to="/Profile"> Profile</Link>
                 
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>
-
-                  <Link to="/addmanager"> Add Manager</Link>
-                
-                </DropdownItem>
-                <DropdownItem divider />
-
-                <DropdownItem onClick={this.logout}>
+                <DropdownItem >
                  LogOut
                 </DropdownItem>
-                
-                
               </DropdownMenu>
             </UncontrolledDropdown>
-         
+            
+            <Button id="login-btn" onClick={this.logUserOut}>Logout</Button>
           </Nav>
-          
-         
-        
       </Navbar>
     </div>
-    )
-  }
+  )
+}
 }
 
-export default connect(null, {adminLogOut})(AdminHeader);
-
-
+export default HeaderTwo;
