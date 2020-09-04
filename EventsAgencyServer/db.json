@@ -27,6 +27,24 @@
       "participants": "2",
       "details": "",
       "id": 1
+    },
+    {
+      "eventType": "Wedding Event",
+      "date": "2020-09-06",
+      "time": "01:02",
+      "participants": "7",
+      "details": "",
+      "approved": 0,
+      "id": 2
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-28",
+      "time": "05:03",
+      "participants": "7",
+      "details": "",
+      "approved": 0,
+      "id": 3
     }
   ],
   "managers": [

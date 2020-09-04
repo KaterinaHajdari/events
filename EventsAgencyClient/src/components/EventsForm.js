@@ -51,7 +51,8 @@ class EventsForm extends React.Component {
         date:this.state.date,
         time:this.state.time,
         participants:this.state.participants,
-        details:this.state.details
+        details:this.state.details,
+        approved:0
     }
       this.props.createEventReservation(eventValues);
   }

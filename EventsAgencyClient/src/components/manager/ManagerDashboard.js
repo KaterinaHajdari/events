@@ -25,6 +25,7 @@ class ManagerDashboard extends React.Component {
          }
 
   render() {
+    console.log(this.state);
     return (
       <>
     
@@ -35,10 +36,13 @@ class ManagerDashboard extends React.Component {
           <div className="row">
             <div className="col-8">
               <ul>
-                <li>mANAGER</li>
-              </ul>
-            </div>
-            <div className="col-4">
+             
+        {
+          this.state.eventsList.map(
+            (event) => 
+            <li id={event.id} >
+             Type:  {event.eventType}  <span />Date:  {event.date}  Time:  {event.time}  Participants:  {event.participants}  Details:   {event.details}
+             
               <IconButton aria-label="delete">
                 <DeleteIcon />
               </IconButton>
@@ -46,7 +50,13 @@ class ManagerDashboard extends React.Component {
               <IconButton aria-label="check">
                 <CheckIcon />
               </IconButton>
+         
+                </li>
+            )
+            }
+              </ul>
             </div>
+           
           </div>
         </div>
       </>

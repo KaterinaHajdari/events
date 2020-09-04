@@ -15,6 +15,7 @@ import Dashboard from "./Dashboard";
 import EditProfile from "../components/user/EditProfile";
 import ManagerLoginForm from "../components/manager/ManagerLoginForm";
 import ManagerDashboard from "../components/manager/ManagerDashboard";
+import EventsForm from "../components/EventsForm";
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
       <Route path="/login-manager" component={ManagerLoginForm} />
       <Route path="/editProfile" component={EditProfile} />
       <Route path="/manager-dashboard" component={ManagerDashboard} />
+      <Route path="/eventsform" component={EventsForm}/>
       <Footer/>
     </BrowserRouter>
   );
