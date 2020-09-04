@@ -13,7 +13,8 @@ import EventsForm from "./EventsForm";
 import Profile from"./Profile";
 import EditProfile from "../components/user/EditProfile";
 import AddManager from "../components/admin/AddManager";
-import AdminEdit from "../components/admin/AdminEdit"
+import AdminEdit from "../components/admin/AdminEdit";
+import Client from "../components/admin/Client"
 const App = () => {
   return (
     <BrowserRouter>
@@ -29,6 +30,7 @@ const App = () => {
       <Route path="/eventsform" component={EventsForm}/>
       <Route path="/addmanager" component={AddManager} />
       <Route path="/adminedit" component={AdminEdit} />
+      <Route path="/Client" component={Client}></Route>
       <Footer/>
     </BrowserRouter>
   );
