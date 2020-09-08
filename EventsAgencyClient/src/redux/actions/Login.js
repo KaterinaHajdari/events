@@ -18,7 +18,7 @@ export const checkLoginValue = loginValues => async dispatch => {
           localStorage.setItem("password", res.data[0].password);
         
         */}
-        dispatch({type: "LOGIN_SUCCESS",  payload: loginValues});      
+        dispatch({type: "LOGIN_SUCCESS",  payload: res.data[0]});      
      }
      else{
         dispatch({type: "LOGIN_FAILURE", payload: {error:"wrong credentials"}});

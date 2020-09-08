@@ -41,7 +41,7 @@ const Header =(props)=> {
               <DropdownMenu right>
                 <DropdownItem>
 
-                  <Link to="/Profile"> Profile</Link>
+                  <Link to="/editProfile"> Profile</Link>
                 
                 </DropdownItem>
                 <DropdownItem divider />
