@@ -6,7 +6,7 @@ import ManagerLogin from "./ManagerLogin";
 import DeclineEvent from "./DeclineEvent";
 import ApproveEvent from "./ApproveEvent"
 import ManagerList from "./ManagerList";
-
+import EditProfile from "./EditProfile";
 export default combineReducers({
   signup: signup,
   login: login,
@@ -14,6 +14,7 @@ export default combineReducers({
   ManagerLogin: ManagerLogin,
   DeclineEvent: DeclineEvent,
   ApproveEvent:ApproveEvent,
-  ManagerList: ManagerList
+  ManagerList: ManagerList,
+  EditProfile:EditProfile
 });
 
