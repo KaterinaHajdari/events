@@ -1,14 +1,11 @@
 import React,{ useState} from "react";
-import { Link } from "react-router-dom";
-import "../css/Admin.css";
-
-import "../../css/Admin.css";
 import {Link} from 'react-router-dom';
+import "../../css/Admin.css";
+
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import AdminHeader from "./AdminHeader";
-
-import  ManagerList  from "../ManagerList";
-const Admin=(props)=> {
+import FetchUser from'../FetchUser'
+const Client=(props)=> {
   const [dropdownOpen, setOpen] = useState(false);
 
   const toggle = () => setOpen(!dropdownOpen);
@@ -25,16 +22,18 @@ const Admin=(props)=> {
       </DropdownToggle>
       <DropdownMenu>
         
-        <DropdownItem > <Link to="/Client">Clients</Link></DropdownItem>
         <DropdownItem divider />
         <DropdownItem>Events</DropdownItem>
+        <DropdownItem divider />
+        <DropdownItem>Admin</DropdownItem>
       </DropdownMenu>
     </ButtonDropdown>
     </div>
         <div className="container2">
           <div className="row">
             <div className="col-8">
-             <ManagerList></ManagerList>
+              <FetchUser/>
+              
             </div>
             
           </div>
@@ -45,4 +44,4 @@ const Admin=(props)=> {
     );
   
 }
-export default Admin;
+export default Client;

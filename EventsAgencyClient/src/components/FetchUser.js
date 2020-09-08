@@ -21,8 +21,8 @@ console.log(userData)
       <div>
         {" "}
         {
-          userData.map((user) => <p> {user.username} 
-          <div className="col-4">
+          userData.map((user) => <p> {user.username}  
+          
               <IconButton aria-label="delete">
                 <DeleteIcon />
               </IconButton>
@@ -30,8 +30,8 @@ console.log(userData)
               <IconButton aria-label="check">
                 <CheckIcon />
               </IconButton>
-            </div>
-          </p>)}{" "}
+            
+           </p>)}{" "}
       </div>{" "}
     </div>
   );
