@@ -5,6 +5,7 @@ import FetchUser from "./FetchUser";
 import ManagerLogin from "./ManagerLogin";
 import DeclineEvent from "./DeclineEvent";
 import ApproveEvent from "./ApproveEvent"
+import ManagerList from "./ManagerList";
 
 export default combineReducers({
   signup: signup,
@@ -12,5 +13,7 @@ export default combineReducers({
   FetchUser: FetchUser,
   ManagerLogin: ManagerLogin,
   DeclineEvent: DeclineEvent,
-  ApproveEvent:ApproveEvent
+  ApproveEvent:ApproveEvent,
+  ManagerList: ManagerList
 });
+

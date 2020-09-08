@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchUsers } from "../redux/actions/FetchUser";
-
+import CheckIcon from "@material-ui/icons/Check";
+import IconButton from "@material-ui/core/IconButton";
+import DeleteIcon from "@material-ui/icons/Delete";
 function FetchUser({ userData, fetchUsers, loading, error }) {
 
   useEffect(() => {
@@ -19,7 +21,17 @@ console.log(userData)
       <div>
         {" "}
         {
-          userData.map((user) => <p> {user.username} </p>)}{" "}
+          userData.map((user) => <p> {user.username}  
+          
+              <IconButton aria-label="delete">
+                <DeleteIcon />
+              </IconButton>
+
+              <IconButton aria-label="check">
+                <CheckIcon />
+              </IconButton>
+            
+           </p>)}{" "}
       </div>{" "}
     </div>
   );
