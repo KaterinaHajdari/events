@@ -76,11 +76,10 @@ class EventsForm extends React.Component {
                   value={this.state.eventType}
                   onChange={this.setEventType}
                > 
-               
                   <option>Event Type</option>
-      <option>Birthday Event</option>
-      <option>Wedding Event </option>
-      <option>Bussiness Event</option>
+                  <option>Birthday Event</option>
+                  <option>Wedding Event </option>
+                  <option>Bussiness Event</option>
     </Input>
             </FormGroup>
           </Col>

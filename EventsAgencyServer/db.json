@@ -30,21 +30,43 @@
     },
     {
       "eventType": "Wedding Event",
-      "date": "2020-09-06",
       "time": "01:02",
       "participants": "7",
-      "details": "",
-      "approved": 0,
-      "id": 2
+      "date": "2020-09-06",
+      "id": 2,
+      "approved": "declined"
     },
     {
       "eventType": "Birthday Event",
-      "date": "2020-09-28",
       "time": "05:03",
       "participants": "7",
-      "details": "",
-      "approved": 0,
-      "id": 3
+      "date": "2020-09-28",
+      "id": 3,
+      "approved": "declined"
+    },
+    {
+      "eventType": "Wedding Event",
+      "time": "19:08",
+      "participants": "3",
+      "date": "2020-09-15",
+      "id": 4,
+      "approved": "approved"
+    },
+    {
+      "eventType": "Birthday Event",
+      "time": "17:02",
+      "participants": "8",
+      "date": "2020-09-21",
+      "id": 5,
+      "approved": "declined"
+    },
+    {
+      "eventType": "Wedding Event",
+      "time": "13:02",
+      "participants": "15",
+      "date": "2020-09-30",
+      "id": 6,
+      "approved": "approved"
     }
   ],
   "managers": [
