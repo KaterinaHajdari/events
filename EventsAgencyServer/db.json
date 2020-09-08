@@ -67,6 +67,14 @@
       "date": "2020-09-30",
       "id": 6,
       "approved": "approved"
+    },
+    {
+      "eventType": "Birthday Event",
+      "time": "17:13",
+      "participants": "20",
+      "date": "2020-09-30",
+      "id": 7,
+      "approved": "approved"
     }
   ],
   "managers": [

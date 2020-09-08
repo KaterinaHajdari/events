@@ -10,11 +10,15 @@ import Events from "./Events";
 import Profile from"./Profile";
 import AddManager from "../components/admin/AddManager";
 import AdminEdit from "../components/admin/AdminEdit";
-import Client from "../components/admin/Client"
+import Client from "../components/admin/Client";
+import EditProfile from "../components/user/EditProfile";
+import EventsForm from "../components/EventsForm";
+import ManagerLoginForm from "../components/manager/ManagerLoginForm";
+import ManagerDashboard from "../components/manager/ManagerDashboard";
 const App = () => {
   return (
     <BrowserRouter>
-      <PrivateRoute path="/dashboard" component={Dashboard} />
+      
       <Route path="/Admin" component={Admin}></Route>
       <Route path="/home" component={Home} exact></Route>
       <Route path="/About" component={About}></Route>
@@ -25,6 +29,10 @@ const App = () => {
       <Route path="/addmanager" component={AddManager} />
       <Route path="/adminedit" component={AdminEdit} />
       <Route path="/Client" component={Client}></Route>
+      <Route path="/editProfile" component={EditProfile} />
+      <Route path="/login-manager" component={ManagerLoginForm}></Route>
+      <Route path="/manager-dashboard" component={ManagerDashboard}></Route>       
+                <Route path="/eventsform" component={EventsForm}/>
       <Footer/>
     </BrowserRouter>
   );
