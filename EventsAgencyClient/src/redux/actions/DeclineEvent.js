@@ -9,7 +9,7 @@ export const declineEvent = (event_id) => async (dispatch) => {
       const values = {
         eventType: res.data[0].eventType,
         time: res.data[0].time,
-        details: res.data[0].data,
+        details: res.data[0].details,
         participants: res.data[0].participants,
         date: res.data[0].date,
         id: res.data[0].id,
