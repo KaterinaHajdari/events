@@ -3,7 +3,7 @@ import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import "../css/EventsForm.css";
 
 import { createEventReservation } from "../redux/actions/CreateEvent";
-import HeaderTwo from "./HeaderTwo";
+
 import { Link, Redirect } from "react-router-dom";
 import Dialog from "../components/Dialog";
 import {connect} from "react-redux";
@@ -66,7 +66,7 @@ class EventsForm extends React.Component {
   render() {
     return (
       <div>
-        <HeaderTwo />
+        
         <Header/>
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
           <div class="card card-signin my-5">
