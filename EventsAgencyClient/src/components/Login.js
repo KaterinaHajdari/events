@@ -44,10 +44,15 @@ class Login extends React.Component {
    if(loading && error===null && !isLoggedIn){
      return <Loading />
    }
-   else if(!loading && error===null && !isLoggedIn){
+   else if(!loading && error===null && !isLoggedIn && this.props.login.values.type==="user"){
      return <Redirect to="/events" />
    }
-   else if(!loading && error===null && isLoggedIn){
+
+   else if(!loading && error===null && !isLoggedIn && this.props.login.values.type==="manager"){
+    return <Redirect  to="/manager-dashboard" />
+  }
+
+   else if(!loading && error===null && isLoggedIn ){
      return <Admin />
    }
 else if(loading && error!==null){
@@ -88,8 +93,11 @@ else{
                   <div className="button-parent">
                   
                   <button className="btn btn-primary text-uppercase login-button" >LOGIN</button>        
+                 
                 </div> 
-                <Link to="/login-manager" style={{display:"flex",justifyContent:"center", alignItems:"center"}}>Login as manager </Link>
+                <div className="button-parent" >
+                <Link className="btn btn-primary text-uppercase signup-button" to="/signup" >Signup</Link>   
+                </div>
               </div>
             </div>
           </div>

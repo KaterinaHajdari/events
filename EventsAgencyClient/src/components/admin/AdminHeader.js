@@ -53,7 +53,7 @@ class AdminHeader extends React.Component{
               <DropdownMenu right>
                 <DropdownItem>
 
-                  <Link to="/adminedit"> Profile</Link>
+                  <Link to="/editProfile"> Profile</Link>
                 
                 </DropdownItem>
                 <DropdownItem divider />
