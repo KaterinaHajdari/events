@@ -1,10 +1,10 @@
 export default function(state={},action){
     switch(action.type){
-        case "CREATE_EVENT_BEGIN":
+        case "EDIT_PROFILE_BEGIN":
             return{...state,loading:true, error:null}
-        case "CREATE_EVENT_SUCCESS":
+        case "EDIT_PROFILE_SUCCESS":
             return{...state, loading:false, error:null}  
-        case "CREATE_EVENT_FAILURE":
+        case "EDIT_PROFILE_FAILURE":
             return {...state,loading:false, error:null}
      default:
          return state;

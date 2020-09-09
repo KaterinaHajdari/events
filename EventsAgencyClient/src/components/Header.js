@@ -13,9 +13,11 @@ import {
   
   Button
 } from 'reactstrap';
-import '../css/Header.css'
-const Header =(props)=> {
-  
+import '../css/Header.css';
+import {connect} from "react-redux";
+
+class Header extends React.Component{
+  render(){
   return (
     <div>
       <Navbar className="Navbar" color="light" light expand="md">
@@ -34,14 +36,18 @@ const Header =(props)=> {
             <NavItem>
               <NavLink ><Link to="/Admin">Dashboard</Link></NavLink>
             </NavItem>
+            {
+             this.props.login.values.id!==0 ?
             <UncontrolledDropdown nav inNavbar>
+           
               <DropdownToggle nav caret>
-               username
-              </DropdownToggle>
+               {this.props.login.values.username}
+              </DropdownToggle> 
+          
               <DropdownMenu right>
-                <DropdownItem>
+                <DropdownItem> 
 
-                  <Link to="/Profile"> Profile</Link>
+                  <Link to="/editProfile"> Profile</Link>
                 
                 </DropdownItem>
                 <DropdownItem divider />
@@ -49,13 +55,27 @@ const Header =(props)=> {
                  LogOut
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
-            <Button id="login-btn"> <Link to="/login">LOGIN</Link></Button>
+            </UncontrolledDropdown> 
+            : null
+  }
+  {
+    this.props.login.values.id===0 ?
+            <Button id="login-btn"> <Link to="/login">Login</Link></Button>
+            :
+            <Button id="login-btn"> <Link to="/signup">Logout</Link></Button>
+
+  }
           </Nav>
       </Navbar>
     </div>
     );
 }
-export default Header;
+}
+const mapStateToProps=(state)=>{
+  return{
+    login:state.login
+  }
+}
+export default connect(mapStateToProps)(Header);
 
 
