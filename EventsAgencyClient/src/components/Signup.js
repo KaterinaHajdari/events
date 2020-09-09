@@ -42,7 +42,7 @@ onFormSubmit=(event)=>{
     email:this.state.email,
     username:this.state.username,
     password:this.state.password,
-    type:"USER"
+    type:"user"
    
   }
   this.props.createUserProfile(values)

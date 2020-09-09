@@ -4,7 +4,7 @@ import avatar from "../../avatar.png";
 import { Container, Row, Col,Form } from "react-bootstrap";
 import { Button } from "reactstrap";
 import "../../css/Profile.css";
-import HeaderTwo from "../HeaderTwo";
+import Header from "../Header";
 import {connect} from "react-redux"; 
 import {editProfile} from "../../redux/actions/EditProfile";
 import Loading from '../Loading';
@@ -67,7 +67,7 @@ class EditProfile extends React.Component {
  else{
     return (
       <div>
-        <HeaderTwo />
+        <Header />
       <Form className="profile-container" onSubmit={this.onFormSubmit}>
         <Container>
           <Row>

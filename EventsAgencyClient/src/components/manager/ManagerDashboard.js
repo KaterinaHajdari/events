@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import HeaderTwo from "../HeaderTwo";
+import Header from "../Header";
 import CheckIcon from "@material-ui/icons/Check";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -52,7 +52,7 @@ class ManagerDashboard extends React.Component {
     console.log(this.state);
     return (
       <>
-        <HeaderTwo />
+        <Header/>
 
         <h4 id="title">Site Administration</h4>
         <div className="container2">

@@ -68,10 +68,11 @@
   text-align: center;
   color: black;
   background-color: white;
-  border-color: #e8baba ;
+  border-color: #e8baba!important ;
   width:150px;
- 
+  margin-bottom:20px;
 }
+
 
 .signup-button:hover{
   background-color: #e8baba!important;
