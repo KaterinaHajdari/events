@@ -6,7 +6,7 @@ import {checkLoginValue} from '../redux/actions/Login';
 import Loading from './Loading';
 import Error from './Error'
 import Admin from './admin/Admin';
-import HeaderLogin from "./HeaderLogin";
+import Header from "./Header";
 class Login extends React.Component {
 
   state={
@@ -56,7 +56,7 @@ else if(loading && error!==null){
 else{
     return (
       <div>
-        <HeaderLogin/>
+        <Header/>
         <form class="form"  onSubmit={this.onFormSubmit}>
         <div class="row">
           <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">

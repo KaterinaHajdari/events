@@ -1,7 +1,7 @@
 import React from "react";
 import {Link,Redirect} from 'react-router-dom';
 import "../../css/Login.css";
-import HeaderLogin from "../HeaderLogin";
+import Header from "../Header";
 import {connect} from "react-redux";
 import {checkManagerLoginValues} from "../../redux/actions/ManagerLogin";
 import Loading from "../Loading";
@@ -48,7 +48,7 @@ class ManagerLoginForm extends React.Component {
       else{
     return (
       <div>
-        <HeaderLogin/>
+        <Header/>
         <form class="form"  onSubmit={this.onFormSubmit}>
         <div class="row">
           <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
