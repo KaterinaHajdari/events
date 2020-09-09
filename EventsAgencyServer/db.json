@@ -30,6 +30,12 @@
       "email": "x.lici@yottaengineering.com",
       "type": "manager",
       "id": 8
+    },
+    {
+      "username": "user71",
+      "email": "user7@mail.com",
+      "password": "user7",
+      "id": 9
     }
   ],
   "events": [
