@@ -4,13 +4,16 @@ import "../css/EventsForm.css";
 import {connect} from "react-redux";
 import {createEventReservation} from "../redux/actions/CreateEvent"
 import HeaderTwo from "./HeaderTwo";
+import {Link,Redirect} from 'react-router-dom';
+import Dialog from "../components/Dialog"
 class EventsForm extends React.Component {
    state={
      eventType:'',
      date:'',
      time:'',
      participants:'',
-     details:''
+     details:'',
+     isOpen: false
    }
 
    setEventType=(event)=>{
@@ -56,6 +59,7 @@ class EventsForm extends React.Component {
     }
       this.props.createEventReservation(eventValues);
   }
+ 
   render() {
     
 
@@ -125,7 +129,13 @@ class EventsForm extends React.Component {
           
         </Row>
        
-        <Button  className=" btn btn-primary text-uppercase events-form"> Reserve</Button>
+        <Button onClick={(e)=>this.setState({isOpen:true})} className=" btn btn-primary text-uppercase events-form"> Reserve</Button>
+       
+        <Dialog isOpen={this.state.isOpen} onClose={(e)=>this.setState({isOpen:false})}>
+          
+          Reservation has been made!
+          Thank you for choosing us!
+        </Dialog>
       </Form>
       </div >
       </div>
