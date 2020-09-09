@@ -23,36 +23,27 @@ let dialogCloseButtonStyles = {
   borderRadius: "50%",
   border: "none",
   width: "30px",
-  height:'30px',
-  fontWeight:'bold',
-  alignSelf:'flex-end'
+  height: "30px",
+  fontWeight: "bold",
+  alignSelf: "flex-end",
 };
 
 class Dialog extends Component {
-  
   render() {
+    let dialog = (
+      <div style={dialogStyles}>
+        <button style={dialogCloseButtonStyles} onClick={this.props.onClose}>
+          x
+        </button>
 
-    let dialog=(
-        <div style={dialogStyles}>
-        <button style={dialogCloseButtonStyles}onClick={this.props.onClose} >x
-              
-</button>
-
-    <div> {this.props.children}
-    </div>
-    </div>
-
-
+        <div> {this.props.children}</div>
+      </div>
     );
-    if(!this.props.isOpen){
-        dialog=null;
+    if (!this.props.isOpen) {
+      dialog = null;
     }
-    
-    return(
-    <div>  
-       {dialog}
-    </div>
-    );
+
+    return <div>{dialog}</div>;
   }
 }
 
