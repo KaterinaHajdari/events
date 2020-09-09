@@ -18,6 +18,7 @@ function ManagerList({ managerData, fetchManagerList, loading, error }) {
       <h2> Manager List </h2>{" "}
       <div>
         {" "}
+        
         {managerData.map((managers) => (
           <p>
             {" "}
@@ -35,6 +36,7 @@ function ManagerList({ managerData, fetchManagerList, loading, error }) {
   );
 }
 const mapStateToProps = (state) => {
+
   return {
     managerData: state.ManagerList.managers,
     loading: state.loading,
