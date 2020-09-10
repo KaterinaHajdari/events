@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Admin.css";
+
 import {
   Collapse,
   Navbar,
@@ -22,7 +23,20 @@ const Admin = (props) => {
       <AdminHeader />
       <h4 id="title">Site Administration</h4>
       <div className="mini-nav">
+      <Navbar color="light" light expand="md">
+        <NavbarBrand >Managers</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
         
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink><Link to="/Client">Clients</Link></NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink><Link to="/EventsList">Events</Link></NavLink>
+            </NavItem>
+            </Nav>
+          
+            </Navbar>
       </div>
       <div className="container2">
         <div className="row">
