@@ -8,7 +8,7 @@ function ManagerList({ managerData, fetchManagerList, loading, error }) {
   useEffect(() => {
     fetchManagerList();
   }, []);
-
+  
   return loading ? (
     <h2> Loading </h2>
   ) : error ? (

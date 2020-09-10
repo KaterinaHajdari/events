@@ -65,12 +65,12 @@
     },
     {
       "eventType": "Bussiness Event",
-      "date": "2020-09-16",
       "time": "15:13",
-      "participants": "12",
       "details": "",
-      "approved": 0,
-      "id": 7
+      "participants": "12",
+      "date": "2020-09-16",
+      "id": 7,
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",
@@ -83,66 +83,66 @@
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 9
+      "participants": "",
+      "date": "",
+      "id": 9,
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 10
+      "participants": "",
+      "date": "",
+      "id": 10,
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 11
+      "participants": "",
+      "date": "",
+      "id": 11,
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 12
+      "participants": "",
+      "date": "",
+      "id": 12,
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 13
+      "participants": "",
+      "date": "",
+      "id": 13,
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 14
+      "participants": "",
+      "date": "",
+      "id": 14,
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 15
+      "participants": "",
+      "date": "",
+      "id": 15,
+      "approved": "approved"
     }
   ]
 }
