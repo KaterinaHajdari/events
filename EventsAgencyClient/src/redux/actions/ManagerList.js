@@ -29,7 +29,7 @@ export const fetchManagerList = () => {
   return (dispatch) => {
     dispatch(ManagerListRequest);
     axios
-      .get("http://localhost:3001/users")
+      .get("http://localhost:3001/users?type=manager")
       .then((response) => {
         const managers = response.data;
        

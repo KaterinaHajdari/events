@@ -1,24 +1,6 @@
 {
   "users": [
     {
-      "email": "xheni@gmail.com",
-      "username": "xheni@gmail.com",
-      "password": "12",
-      "id": 3
-    },
-    {
-      "username": "Xheni1",
-      "email": "x@gmail.com",
-      "password": "12",
-      "id": 4
-    },
-    {
-      "email": "sigi@gmail.com",
-      "username": "sigi",
-      "password": "sigi22",
-      "id": 6
-    },
-    {
       "username": "manager1",
       "password": "manager1",
       "type": "manager",
@@ -30,12 +12,6 @@
       "email": "x.lici@yottaengineering.com",
       "type": "manager",
       "id": 8
-    },
-    {
-      "username": "user71",
-      "email": "user7@mail.com",
-      "password": "user7",
-      "id": 9
     }
   ],
   "events": [
