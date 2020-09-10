@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Login from"./Login";
 import Home from "./Home";
+import EventsList from "../components/admin/EventsList"
 import Signup from "./Signup";
 import Admin from "../components/admin/Admin";
 import Events from "./Events";
@@ -15,7 +16,7 @@ import ManagerDashboard from "../components/manager/ManagerDashboard";
 const App = () => {
   return (
     <BrowserRouter>
-      
+        <Route path="/EventsList" component={EventsList}/>
       <Route path="/Admin" component={Admin}></Route>
       <Route path="/home" component={Home} exact></Route>
       <Route path="/About" component={About}></Route>
