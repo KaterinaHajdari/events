@@ -12,7 +12,6 @@
       "email": "x.lici@yottaengineering.com",
       "type": "manager",
       "id": 8
-<<<<<<< HEAD
     },
     {
       "username": "user71",
@@ -25,15 +24,6 @@
       "email": "admin@gmail.com",
       "password": "admin",
       "id": 10
-||||||| 1bd654d
-    },
-    {
-      "username": "user71",
-      "email": "user7@mail.com",
-      "password": "user7",
-      "id": 9
-=======
->>>>>>> 48ee46dc42297dc0fc9f1be6bd5cc19e7123c0f3
     }
   ],
   "events": [
