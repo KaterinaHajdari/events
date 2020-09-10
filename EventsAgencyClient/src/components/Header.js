@@ -20,7 +20,7 @@ class Header extends React.Component{
   render(){
   return (
     <div>
-      <Navbar className="Navbar" color="light" light expand="md">
+      <Navbar  className="Navbar" color="light" light expand="md">
         <NavbarBrand href="/">Logo</NavbarBrand>
       
           <Nav className="ml-auto"  >
