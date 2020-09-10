@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Admin.css";
 import {
-  ButtonDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
 } from "reactstrap";
 import AdminHeader from "./AdminHeader";
 
@@ -19,19 +22,7 @@ const Admin = (props) => {
       <AdminHeader />
       <h4 id="title">Site Administration</h4>
       <div className="mini-nav">
-        <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-          <DropdownToggle id="manager-button" caret>
-            Managers
-          </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>
-              {" "}
-              <Link to="/Client">Clients</Link>
-            </DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem>Events</DropdownItem>
-          </DropdownMenu>
-        </ButtonDropdown>
+        
       </div>
       <div className="container2">
         <div className="row">
