@@ -10,7 +10,7 @@ import Admin from "../components/admin/Admin";
 import Events from "./Events";
 import AddManager from "../components/admin/AddManager";
 import Client from "../components/admin/Client";
-import EventsList from "../components/admin/EventsList"
+
 import EditProfile from "../components/user/EditProfile";
 import EventsForm from "../components/EventsForm";
 import ManagerDashboard from "../components/manager/ManagerDashboard";
