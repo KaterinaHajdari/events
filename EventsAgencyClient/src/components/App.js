@@ -15,8 +15,7 @@ const App = () => {
   return (
 <div>
     <BrowserRouter>
-    <Header />
-   
+       
       <Route path="/Admin" component={Admin}></Route>
       <Route path="/About" component={About}></Route>
       <Route path="/Events" component={Events}></Route>
@@ -24,8 +23,8 @@ const App = () => {
       <Route path="/login" component={Login} />
       <PrivateRoute path="/dashboard" component={Dashboard} />
       <Route path="/home" exact component={Home} ></Route>
-    
-     
+  
+      <Footer/>
     </BrowserRouter>
     <Footer />
   </div>
