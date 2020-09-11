@@ -32,6 +32,13 @@ const reducer =(state = initialState, action) =>{
                         managers:[],
                         error: action.payload
                     }
+                    case "DELETE_USER_SUCCESS":
+                    console.log(action.id);
+                    return {
+                      ...state,
+              
+                      users: state.users.filter((el) => el.id !== action.id),
+                    };
                     default : return state
     }
 }

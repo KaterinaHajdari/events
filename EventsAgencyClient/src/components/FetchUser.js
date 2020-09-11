@@ -19,7 +19,7 @@ function FetchUser({ userData, fetchUsers, loading, error,deleteUser }) {
   }
   
 
-console.log(userData)
+
   return loading ? (
     <h2> Loading </h2>
   ) : error ? (

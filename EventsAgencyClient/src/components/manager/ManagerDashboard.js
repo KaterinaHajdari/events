@@ -15,9 +15,7 @@ class ManagerDashboard extends React.Component {
   };
   componentDidMount() {
     events
-      .get(
-        `/events?approved=0`
-      )
+      .get(`/events?approved=0`)
 
       .then((res) => {
         this.setState({
@@ -25,7 +23,7 @@ class ManagerDashboard extends React.Component {
         });
       });
   }
-  
+
   declineEvent = (event_id) => {
     this.props.declineEvent(event_id);
 
@@ -49,7 +47,6 @@ class ManagerDashboard extends React.Component {
       eventsList: newState,
     });
   };
- 
 
   render() {
     return (
@@ -69,29 +66,28 @@ class ManagerDashboard extends React.Component {
               </tr>
             </thead>
             <tbody>
-
               {this.state.eventsList.map((event) => (
                 <tr key={event.id}>
-                  
                   <td>{event.eventType}</td>
                   <td>{event.date}</td>
                   <td>{event.time}</td>
                   <td>{event.participants}</td>
                   <td>{event.details}</td>
-                  <td> <IconButton
-                aria-label="delete"
-                style={{ color: "red", width: "30px" }}
-              >
-                <DeleteIcon onClick={() => this.declineEvent(event.id)} />
-              </IconButton>
-              <IconButton aria-label="check" style={{ color: "green" }}>
-                <CheckIcon onClick={() => this.approveEvent(event.id)} />
-              </IconButton></td>
+                  <td>
+                    {" "}
+                    <IconButton
+                      aria-label="delete"
+                      style={{ color: "red", width: "30px" }}
+                    >
+                      <DeleteIcon onClick={() => this.declineEvent(event.id)} />
+                    </IconButton>
+                    <IconButton aria-label="check" style={{ color: "green" }}>
+                      <CheckIcon onClick={() => this.approveEvent(event.id)} />
+                    </IconButton>
+                  </td>
                 </tr>
               ))}
             </tbody>
-
-           
           </Table>
         </div>
       </>
