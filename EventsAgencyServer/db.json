@@ -1,10 +1,10 @@
 {
   "users": [
     {
-      "username": "manager1",
-      "password": "manager1",
-      "type": "manager",
-      "id": 7
+      "username": "manager",
+      "email": "manager@gmail.com",
+      "password": "manager",
+      "id": 1
     },
     {
       "username": "user2",
@@ -71,7 +71,7 @@
       "participants": "8",
       "date": "2020-09-21",
       "id": 5,
-      "approved": "declined"
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
@@ -79,7 +79,7 @@
       "participants": "15",
       "date": "2020-09-30",
       "id": 6,
-      "approved": "approved"
+      "approved": "declined"
     },
     {
       "eventType": "Bussiness Event",
@@ -92,12 +92,12 @@
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 8
+      "participants": "",
+      "date": "",
+      "id": 8,
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
@@ -106,7 +106,7 @@
       "participants": "",
       "date": "",
       "id": 9,
-      "approved": "declined"
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
@@ -115,7 +115,7 @@
       "participants": "",
       "date": "",
       "id": 10,
-      "approved": "declined"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -124,7 +124,7 @@
       "participants": "",
       "date": "",
       "id": 11,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -142,7 +142,7 @@
       "participants": "",
       "date": "",
       "id": 13,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -151,7 +151,7 @@
       "participants": "",
       "date": "",
       "id": 14,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -160,7 +160,7 @@
       "participants": "",
       "date": "",
       "id": 15,
-      "approved": "approved"
+      "approved": "0"
     }
   ]
 }
