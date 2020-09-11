@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from "./Header"
 const About=()=>{
 
 
@@ -7,7 +6,7 @@ const About=()=>{
 
 return(
 <div>
-    <Header/>
+ 
 About us
 </div>
 )

@@ -8,7 +8,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
 } from "reactstrap";
 import AdminHeader from "./AdminHeader";
 
@@ -21,9 +21,7 @@ const Admin = (props) => {
     <div>
       <AdminHeader />
       <h4 id="title">Site Administration</h4>
-      <div className="mini-nav">
-        
-      </div>
+      <div className="mini-nav"></div>
       <div className="container2">
         <div className="row">
           <div className="col-8">
