@@ -15,14 +15,15 @@ import {
 import "../css/Header.css";
 import { connect } from "react-redux";
 
-class Header extends React.Component {
-  render() {
-    return (
-      <div>
-        <Navbar  style={{"backgroundColor":"whitesmoke"}}className="Navbar"  light expand="md">
-          <NavbarBrand href="/">Logo</NavbarBrand>
 
-          <Nav className="ml-auto" >
+class Header extends React.Component{
+  render(){
+  return (
+    <div>
+      <Navbar  className="Navbar" color="light" light expand="md">
+        <NavbarBrand href="/">Logo</NavbarBrand>
+      
+          <Nav className="ml-auto"  >
             <NavItem>
               <NavLink class="nav-item active">
                 {" "}

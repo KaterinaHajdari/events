@@ -18,6 +18,18 @@
       "email": "x.lici@yottaengineering.com",
       "type": "user",
       "id": 8
+    },
+    {
+      "username": "user71",
+      "email": "user7@mail.com",
+      "password": "user7",
+      "id": 9
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 10
     }
   ],
   "events": [
