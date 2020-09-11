@@ -6,8 +6,8 @@ import { createEventReservation } from "../redux/actions/CreateEvent";
 
 import { Link, Redirect } from "react-router-dom";
 import Dialog from "../components/Dialog";
-import {connect} from "react-redux";
-import Header from "./Header";
+import { connect } from "react-redux";
+
 class EventsForm extends React.Component {
   state = {
     eventType: "",
@@ -58,10 +58,9 @@ class EventsForm extends React.Component {
   render() {
     return (
       <div>
-        
-        <Header/>
+     
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
+          <div class="card card-signin my-5">
             <div class="card-body">
               <h5 class="card-title text-center">Event Reservation</h5>
               <Form onSubmit={this.onFormSubmit}>

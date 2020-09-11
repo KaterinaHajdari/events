@@ -7,11 +7,29 @@
       "id": 7
     },
     {
-      "username": "manager2",
-      "password": "manager2",
+      "username": "user2",
       "email": "x.lici@yottaengineering.com",
-      "type": "manager",
+      "password": "user2",
       "id": 8
+    },
+    {
+      "username": "user1",
+      "password": "user1",
+      "email": "x.lici@yottaengineering.com",
+      "type": "user",
+      "id": 8
+    },
+    {
+      "username": "user71",
+      "email": "user7@mail.com",
+      "password": "user7",
+      "id": 9
+    },
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "id": 10
     }
   ],
   "events": [
