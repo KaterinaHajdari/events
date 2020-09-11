@@ -6,12 +6,13 @@ import EventsForm from "./EventsForm";
 import AddManager from "../components/admin/AddManager";
 import Client from "../components/admin/Client";
 import ManagerDashboard from "../components/manager/ManagerDashboard";
+import EventsList from "../components/admin/EventsList";
+import ManagerList from "../components/ManagerList";
 
 class Dashboard extends React.Component {
   render() {
     return (
       <>
-        
         <Switch>
           <PrivateRoute path="/dashboard/editProfile" component={EditProfile} />
 
@@ -21,8 +22,13 @@ class Dashboard extends React.Component {
 
           <PrivateRoute path="/dashboard/Client" component={Client} />
 
-          <PrivateRoute  path="/dashboard/manager-dashboard" component={ManagerDashboard}
+          <PrivateRoute
+            path="/dashboard/manager-dashboard"
+            component={ManagerDashboard}
           />
+
+          <PrivateRoute path="/dashboard/EventsList" component={EventsList} />
+          <PrivateRoute path="/dashboard/ManagerList" component={ManagerList} />
         </Switch>
       </>
     );
