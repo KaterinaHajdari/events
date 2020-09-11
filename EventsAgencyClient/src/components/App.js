@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route,Switch } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
 import Footer from "./Footer";
 import About from "./About";
 import Login from "./Login";
@@ -16,11 +17,12 @@ import EventsForm from "../components/EventsForm";
 import ManagerDashboard from "../components/manager/ManagerDashboard";
 import ManagerList from "./ManagerList.js";
 const App = () => {
+
   return (
+<div>
     <BrowserRouter>
       <Route path="/EventsList" component={EventsList} />
       <Route path="/Admin" component={Admin}></Route>
-      <Route path="/home" component={Home} exact></Route>
       <Route path="/About" component={About}></Route>
       <Route path="/Events" component={Events}></Route>
       <Route path="/signup" component={Signup} />
@@ -34,6 +36,8 @@ const App = () => {
       <Route path="/ManagerList" component={ManagerList} />
       <Footer />
     </BrowserRouter>
+    <Footer />
+  </div>
   );
 };
 export default App;

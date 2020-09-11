@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../Header";
 import CheckIcon from "@material-ui/icons/Check";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";

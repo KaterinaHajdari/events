@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../../css/Login.css";
-import AdminHeader from "./AdminHeader";
 import { createUserProfile } from "../../redux/actions/Signup";
 import { connect } from "react-redux";
+
+import AdminHeader from "./AdminHeader";
+import "../../css/Login.css";
 class AddManager extends React.Component {
   state = {
     username: "",
     password: "",
-    email:""
+    email: "",
   };
 
   setUsername = (event) => {
@@ -16,7 +16,7 @@ class AddManager extends React.Component {
       username: event.target.value,
     });
   };
- 
+
   setEmail = (event) => {
     this.setState({
       email: event.target.value,
@@ -35,7 +35,7 @@ class AddManager extends React.Component {
     const managerValues = {
       username: this.state.username,
       password: this.state.password,
-      email:this.state.email,
+      email: this.state.email,
       type: "manager",
     };
 
