@@ -7,7 +7,7 @@ import { Table } from "reactstrap";
 import { connect } from "react-redux";
 import { declineEvent } from "../../redux/actions/DeclineEvent";
 import { approveEvent } from "../../redux/actions/ApproveEvent";
-
+import Header from "../Header";
 class ManagerDashboard extends React.Component {
   state = {
     eventsList: [],

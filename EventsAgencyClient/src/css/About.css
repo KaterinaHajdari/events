@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 500px;
+    right: 400px;
+    float: left;
+    color: black;
+   background-color: #EEEBEB;
+   margin-right: 100px;
+    padding-left: 10px;
+    padding-right: 50px;
+    background-blend-mode: luminosity
+  }
+  #aboutUs{
+    font: bold 24px/45px Helvetica, Sans-Serif;
+  }

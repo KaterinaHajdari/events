@@ -12,8 +12,6 @@
       "password": "user2",
       "id": 8
     },
-    
-    
     {
       "username": "user71",
       "email": "user7@mail.com",
@@ -25,13 +23,6 @@
       "email": "admin@gmail.com",
       "password": "admin",
       "id": 10
-    },
-    {
-      "username": "manager2",
-      "password": "manager2",
-      "email": "k.hajdari@yottaengineering.com",
-      "type": "manager",
-      "id": 12
     },
     {
       "username": "manager3",
@@ -78,7 +69,7 @@
       "participants": "7",
       "date": "2020-09-28",
       "id": 3,
-      "approved": "0"
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",
@@ -129,7 +120,7 @@
       "participants": "",
       "date": "",
       "id": 9,
-      "approved": "0"
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
@@ -138,7 +129,7 @@
       "participants": "",
       "date": "",
       "id": 10,
-      "approved": "0"
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",
@@ -147,7 +138,7 @@
       "participants": "",
       "date": "",
       "id": 11,
-      "approved": "0"
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",

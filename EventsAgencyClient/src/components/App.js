@@ -1,3 +1,7 @@
+import React from "react";
+import { BrowserRouter, Route,Switch } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
+import Footer from "./Footer";
 import About from "./About";
 import Login from "./Login";
 import Home from "./Home";
@@ -30,8 +34,10 @@ const App = () => {
       <Route path="/eventsform" component={EventsForm} />
 
       <Route path="/ManagerList" component={ManagerList} />
-    
+     
     </BrowserRouter>
     <Footer />
   </div>
-  )}
+  );
+};
+export default App;

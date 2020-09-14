@@ -34,7 +34,7 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
 
-        users: state.users.filter((el) => el.id !== action.id),
+        managers: state.managers.filter((el) => el.id !== action.id),
       };
     default:
       return state;
