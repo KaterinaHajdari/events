@@ -1,11 +1,11 @@
 import React from "react";
-import eventpht from "./images/eventpht.jpg";
+import d from "./images/d.jpg";
 import About from "../css/About.css";
 const AboutUs = () => {
   return (
     <div>
       {" "}
-      <img src={eventpht} alt="Home" width="100%" height="100%" />
+      <img src={d} alt="Home" width="100%" height="100%" />
       <div class="container">
         <div class="text-block">
           <h1 id="aboutUs">Who we are </h1>
