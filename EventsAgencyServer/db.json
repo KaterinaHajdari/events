@@ -1,19 +1,19 @@
 {
   "users": [
     {
+      "username": "manager",
+      "email": "manager@gmail.com",
+      "password": "manager",
+      "id": 1
+    },
+    {
       "username": "user2",
       "email": "x.lici@yottaengineering.com",
       "password": "user2",
       "id": 8
     },
     
-    {
-      "username": "user1",
-      "password": "user1",
-      "email": "x.lici@yottaengineering.com",
-      "type": "user",
-      "id": 8
-    },
+    
     {
       "username": "user71",
       "email": "user7@mail.com",
@@ -115,12 +115,12 @@
     },
     {
       "eventType": "Wedding Event",
-      "date": "",
       "time": "",
-      "participants": "",
       "details": "",
-      "approved": 0,
-      "id": 8
+      "participants": "",
+      "date": "",
+      "id": 8,
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",
@@ -138,7 +138,7 @@
       "participants": "",
       "date": "",
       "id": 10,
-      "approved": "declined"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -147,7 +147,7 @@
       "participants": "",
       "date": "",
       "id": 11,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -165,7 +165,7 @@
       "participants": "",
       "date": "",
       "id": 13,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -174,7 +174,7 @@
       "participants": "",
       "date": "",
       "id": 14,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -183,7 +183,7 @@
       "participants": "",
       "date": "",
       "id": 15,
-      "approved": "approved"
+      "approved": "0"
     }
   ]
 }

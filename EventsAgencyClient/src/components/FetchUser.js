@@ -14,7 +14,7 @@ function FetchUser({ userData, fetchUsers, loading, error, deleteUser }) {
     deleteUser(user_id);
   }
 
-  console.log(userData);
+
   return loading ? (
     <h2> Loading </h2>
   ) : error ? (

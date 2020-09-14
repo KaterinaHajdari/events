@@ -3,23 +3,18 @@ import { connect } from "react-redux";
 import { fetchManagerList } from "../redux/actions/ManagerList";
 import CheckIcon from "@material-ui/icons/Check";
 import IconButton from "@material-ui/core/IconButton";
-import { deleteUser } from "../redux/actions/deleteUser";
+import {deleteUser} from "../redux/actions/deleteUser"
 import DeleteIcon from "@material-ui/icons/Delete";
 
-function ManagerList({
-  managerData,
-  fetchManagerList,
-  loading,
-  error,
-  deleteManager,
-}) {
+function ManagerList({ managerData, fetchManagerList, loading, error,deleteManager }) {
   useEffect(() => {
     fetchManagerList();
   }, []);
 
-  const deleteManagerHandler = (id) => {
-    deleteManager(id);
-  };
+ const deleteManagerHandler=(id)=>{
+   deleteManager(id)
+
+  }
   return loading ? (
     <h2> Loading </h2>
   ) : error ? (
@@ -33,12 +28,10 @@ function ManagerList({
           <p>
             {" "}
             {managers.username}
-            <IconButton
-              aria-label="delete"
-              style={{ color: "red", width: "30px" }}
-            >
-              <DeleteIcon onClick={() => deleteManagerHandler(managers.id)} />
+            <IconButton  aria-label="delete" style={{ color: "red", width: "30px" }}>
+             <DeleteIcon  onClick={()=>deleteManagerHandler(managers.id)}/>
             </IconButton>
+            
           </p>
         ))}{" "}
       </div>{" "}
@@ -55,7 +48,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchManagerList: () => dispatch(fetchManagerList()),
-    deleteManager: (id) => dispatch(deleteUser(id)),
+    deleteManager:(id)=>dispatch(deleteUser(id))
+    
   };
 };
 
