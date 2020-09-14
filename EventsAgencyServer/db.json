@@ -1,17 +1,12 @@
 {
   "users": [
     {
-      "username": "manager1",
-      "password": "manager1",
-      "type": "manager",
-      "id": 7
-    },
-    {
       "username": "user2",
       "email": "x.lici@yottaengineering.com",
       "password": "user2",
       "id": 8
     },
+    
     {
       "username": "user1",
       "password": "user1",
@@ -30,6 +25,34 @@
       "email": "admin@gmail.com",
       "password": "admin",
       "id": 10
+    },
+    {
+      "username": "manager2",
+      "password": "manager2",
+      "email": "k.hajdari@yottaengineering.com",
+      "type": "manager",
+      "id": 12
+    },
+    {
+      "username": "manager3",
+      "password": "manager3",
+      "email": "k@mail.com",
+      "type": "manager",
+      "id": 13
+    },
+    {
+      "username": "manager4",
+      "password": "manager4",
+      "email": "xh@mail.com",
+      "type": "manager",
+      "id": 14
+    },
+    {
+      "username": "manager5",
+      "password": "manager5",
+      "email": "elvina@mail.com",
+      "type": "manager",
+      "id": 15
     }
   ],
   "events": [
@@ -55,7 +78,7 @@
       "participants": "7",
       "date": "2020-09-28",
       "id": 3,
-      "approved": "declined"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -71,7 +94,7 @@
       "participants": "8",
       "date": "2020-09-21",
       "id": 5,
-      "approved": "declined"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -79,7 +102,7 @@
       "participants": "15",
       "date": "2020-09-30",
       "id": 6,
-      "approved": "approved"
+      "approved": "0"
     },
     {
       "eventType": "Bussiness Event",
@@ -88,7 +111,7 @@
       "participants": "12",
       "date": "2020-09-16",
       "id": 7,
-      "approved": "declined"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
@@ -106,7 +129,7 @@
       "participants": "",
       "date": "",
       "id": 9,
-      "approved": "declined"
+      "approved": "0"
     },
     {
       "eventType": "Wedding Event",
