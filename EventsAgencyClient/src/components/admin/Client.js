@@ -11,7 +11,7 @@ import {
   NavItem,
   NavLink
 } from "reactstrap";
-import AdminHeader from "./AdminHeader";
+
 import FetchUser from'../FetchUser'
 
 const Client=(props)=> {
@@ -20,7 +20,7 @@ const Client=(props)=> {
   const toggle = () => setOpen(!dropdownOpen);
     return (
       <div>
-        <AdminHeader />
+        
         <h4 id="title">Site Administration</h4>
         <div className="mini-nav">
       <Navbar color="light" light expand="md">

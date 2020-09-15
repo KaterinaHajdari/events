@@ -11,7 +11,7 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-import AdminHeader from "./AdminHeader";
+
 
 import ManagerList from "../ManagerList";
 const Admin = (props) => {
@@ -20,7 +20,7 @@ const Admin = (props) => {
   const toggle = () => setOpen(!dropdownOpen);
   return (
     <div>
-      <AdminHeader />
+     
       <h4 id="title">Site Administration</h4>
       <div className="mini-nav">
       <Navbar color="light" light expand="md">

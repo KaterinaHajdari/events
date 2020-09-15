@@ -46,7 +46,8 @@ class Header extends React.Component{
             </NavItem>
             <NavItem>
               <NavLink>
-                <Link to="/Admin">Dashboard</Link>
+                {this.props.login.values.type==="admin"? ( <Link to="/Admin">Dashboard</Link>):<Link to="dashboard/manager-dashboard">Dashboard</Link>
+               }
               </NavLink>
             </NavItem>
             {this.props.login.values.id !== 0 ? (
@@ -60,6 +61,13 @@ class Header extends React.Component{
                     <Link to="/dashboard/editProfile"> Profile</Link>
                   </DropdownItem>
                   <DropdownItem divider />
+                  {this.props.login.values.type==="admin"? (
+                    <DropdownItem>
+                      <Link to ="/dashboard/addmanager">Add Manager</Link>
+                    </DropdownItem>
+                  ):null
+                  }
+                  <DropdownItem divider />
                   <DropdownItem>LogOut</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -70,6 +78,7 @@ class Header extends React.Component{
                 <Link to="/login">Login</Link>
               </Button>
             ) : null}
+            
           </Nav>
         </Navbar>
       </div>

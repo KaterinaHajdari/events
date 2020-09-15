@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../Header";
+
 
 import events from "../../redux/apis/events";
 import { Table } from "reactstrap";
@@ -35,7 +35,7 @@ class EventsList extends React.Component {
     console.log(this.state.eventsList);
     return (
       <>
-        <Header />
+
 
         <h4 id="title">Site Administration</h4>
         <div className="mini-nav">
