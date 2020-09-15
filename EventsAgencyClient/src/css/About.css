@@ -5,11 +5,17 @@
   /* Bottom right text */
   .text-block {
     position: absolute;
-    bottom:400px;
-    right: 300px;
-   background-color: plum;
-    color: white;
-    padding-left: 100px;
-    padding-right: 4px;
+    bottom:350px;
+    right: 100px;
+    left:100px;
+   background-color: rgba(230,230,250,0.6);
+    color:rgb(0,0,0);
+   
+    font-weight: bold;
+    font-family:fantazy;
+    font-style: italic;
+    border-radius: 25px;
+    padding: 50px;
+    
   }
  
