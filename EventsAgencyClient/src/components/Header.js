@@ -14,16 +14,20 @@ import {
 } from "reactstrap";
 import "../css/Header.css";
 import { connect } from "react-redux";
+import { adminLogOut } from "../redux/actions/Login";
 
+class Header extends React.Component {
+  logout = () => {
+    this.props.adminLogOut();
+  };
 
-class Header extends React.Component{
-  render(){
-  return (
-    <div>
-      <Navbar  className="Navbar" color="light" light expand="md">
-        <NavbarBrand href="/">Logo</NavbarBrand>
-      
-          <Nav className="ml-auto"  >
+  render() {
+    return (
+      <div>
+        <Navbar className="Navbar" color="light" light expand="md">
+          <NavbarBrand href="/">Logo</NavbarBrand>
+
+          <Nav className="ml-auto">
             <NavItem>
               <NavLink class="nav-item active">
                 {" "}
@@ -46,11 +50,16 @@ class Header extends React.Component{
             </NavItem>
             <NavItem>
               <NavLink>
-                {this.props.login.values.type==="admin"? ( <Link to="/Admin">Dashboard</Link>):<Link to="dashboard/manager-dashboard">Dashboard</Link>
-               }
+                {
+                this.props.login.values&&this.props.login.values.id?
+                this.props.login.values.type === "admin" ? (
+                  <Link to="/Admin">Dashboard</Link>
+                ) : (
+                  <Link to="dashboard/manager-dashboard">Dashboard</Link>
+                ):null}
               </NavLink>
             </NavItem>
-            {this.props.login.values.id !== 0 ? (
+            {this.props.login.values && this.props.login.values.id !== 0 ? (
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   {this.props.login.values.username}
@@ -61,24 +70,23 @@ class Header extends React.Component{
                     <Link to="/dashboard/editProfile"> Profile</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  {this.props.login.values.type==="admin"? (
+                  {this.props.login.values &&
+                  this.props.login.values.type === "admin" ? (
                     <DropdownItem>
-                      <Link to ="/dashboard/addmanager">Add Manager</Link>
+                      <Link to="/dashboard/addmanager">Add Manager</Link>
                     </DropdownItem>
-                  ):null
-                  }
+                  ) : null}
                   <DropdownItem divider />
-                  <DropdownItem>LogOut</DropdownItem>
+                  <DropdownItem onClick={this.logout}>LogOut</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             ) : null}
-            {this.props.login.values.id === 0 ? (
+            {(this.props.login.values && !this.props.login.values.id )||!this.props.login.values ? (
               <Button id="login-btn">
                 {" "}
                 <Link to="/login">Login</Link>
               </Button>
             ) : null}
-            
           </Nav>
         </Navbar>
       </div>
@@ -90,4 +98,4 @@ const mapStateToProps = (state) => {
     login: state.login,
   };
 };
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps, { adminLogOut })(Header);
