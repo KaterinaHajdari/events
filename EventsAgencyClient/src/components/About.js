@@ -11,7 +11,7 @@ const AboutUs = () => {
           <h1 id="aboutUs">Who we are </h1>
           <p>
             K & XH Event Planner is an event logistics and marketing company
-            which was formed back in 2020. The company offers A-Z event planning
+            which is formed in July 2020. The company offers A-Z event planning
             services from a team of experienced and energetic event planners,
             suppliers, venues and more. One of the main reasons behind the
             success of Event Planner is the fact that the team does not charge
@@ -25,7 +25,9 @@ const AboutUs = () => {
             Our team understands that a properly executed event can be leveraged
             to support an organization’s strategic vision, incorporated into a
             company’s marketing plan, or used to build networks and client
-            loyalty.
+            loyalty. For a long time our capable, experienced group has aced
+            incalculable festivals – weddings, corporate, occasions, birthday
+            celebrations, meals and that’s only the tip of the iceberg.
           </p>
         </div>
       </div>

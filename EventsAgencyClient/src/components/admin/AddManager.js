@@ -2,7 +2,7 @@ import React from "react";
 import { createUserProfile } from "../../redux/actions/Signup";
 import { connect } from "react-redux";
 
-import AdminHeader from "./AdminHeader";
+
 import "../../css/Login.css";
 class AddManager extends React.Component {
   state = {
@@ -45,7 +45,7 @@ class AddManager extends React.Component {
   render() {
     return (
       <div>
-        <AdminHeader />
+       
         <form class="form" onSubmit={this.onFormSubmit}>
           <div class="row">
             <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">

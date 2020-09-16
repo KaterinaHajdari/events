@@ -4,13 +4,22 @@
       "username": "manager",
       "email": "manager@gmail.com",
       "password": "manager",
+      "type":"manager",
       "id": 1
     },
     {
       "username": "user2",
       "email": "x.lici@yottaengineering.com",
       "password": "user2",
-      "id": 8
+      "id": 8,
+      "type":"user"
+    },
+    {
+      "username": "admin",
+      "email": "x.lici@yottaengineering.com",
+      "password": "admin",
+      "id": 16,
+      "type": "admin"
     },
     {
       "username": "user71",
@@ -23,13 +32,6 @@
       "email": "admin@gmail.com",
       "password": "admin",
       "id": 10
-    },
-    {
-      "username": "manager3",
-      "password": "manager3",
-      "email": "k@mail.com",
-      "type": "manager",
-      "id": 13
     },
     {
       "username": "manager4",
