@@ -1,18 +1,11 @@
 {
   "users": [
     {
-      "username": "manager",
-      "email": "manager@gmail.com",
-      "password": "manager",
-      "type":"manager",
-      "id": 1
-    },
-    {
       "username": "user2",
       "email": "x.lici@yottaengineering.com",
       "password": "user2",
       "id": 8,
-      "type":"user"
+      "type": "user"
     },
     {
       "username": "admin",
