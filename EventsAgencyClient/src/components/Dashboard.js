@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import EditProfile from "../components/user/EditProfile";
+import EditProfile from "../components/EditProfile"
 import EventsForm from "./EventsForm";
 import AddManager from "../components/admin/AddManager";
 import Client from "../components/admin/Client";

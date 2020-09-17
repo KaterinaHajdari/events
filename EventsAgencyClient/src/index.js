@@ -17,7 +17,7 @@ const store=createStore(reducers,{login:{values:{id:0}}}, composeEnhancers(apply
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-        <App/>
+            <App/>
         </BrowserRouter>
     </Provider>,
     document.querySelector('#root')

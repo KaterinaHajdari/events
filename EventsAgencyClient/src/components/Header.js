@@ -14,11 +14,11 @@ import {
 } from "reactstrap";
 import "../css/Header.css";
 import { connect } from "react-redux";
-import { adminLogOut } from "../redux/actions/Login";
+import { userLogOut } from "../redux/actions/Login";
 
 class Header extends React.Component {
   logout = () => {
-    this.props.adminLogOut();
+    this.props.userLogOut();
   };
 
   render() {
@@ -31,7 +31,7 @@ class Header extends React.Component {
             <NavItem>
               <NavLink class="nav-item active">
                 {" "}
-                <Link to="/home" activestyle={{ color: "white" }}>
+                <Link to="/" activestyle={{ color: "white" }}>
                   Home
                 </Link>
               </NavLink>
@@ -98,4 +98,4 @@ const mapStateToProps = (state) => {
     login: state.login,
   };
 };
-export default connect(mapStateToProps, { adminLogOut })(Header);
+export default connect(mapStateToProps, { userLogOut })(Header);

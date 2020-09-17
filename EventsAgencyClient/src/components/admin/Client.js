@@ -29,10 +29,10 @@ const Client=(props)=> {
         
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink><Link to="/Client">Clients</Link></NavLink>
+              <NavLink><Link to="/dashboard/Client">Clients</Link></NavLink>
             </NavItem>
             <NavItem>
-              <NavLink><Link to="/EventsList">Events</Link></NavLink>
+              <NavLink><Link to="/dashboard/EventsList">Events</Link></NavLink>
             </NavItem>
             </Nav>
           

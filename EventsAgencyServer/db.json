@@ -1,42 +1,23 @@
 {
   "users": [
     {
-      "username": "manager",
-      "email": "manager@gmail.com",
-      "password": "manager",
-      "type":"manager",
-      "id": 1
-    },
-    {
-      "username": "user2",
-      "email": "x.lici@yottaengineering.com",
-      "password": "user2",
-      "id": 8,
-      "type":"user"
-    },
-    {
-      "username": "admin",
-      "email": "x.lici@yottaengineering.com",
-      "password": "admin",
-      "id": 16,
-      "type": "admin"
-    },
-    {
-      "username": "user71",
+      "username": "user7",
       "email": "user7@mail.com",
       "password": "user7",
+      "type": "user",
       "id": 9
     },
     {
-      "username": "admin",
+      "username": "admin1",
       "email": "admin@gmail.com",
       "password": "admin",
+      "type": "admin",
       "id": 10
     },
     {
-      "username": "manager4",
-      "password": "manager4",
+      "username": "manager",
       "email": "xh@mail.com",
+      "password": "manager4",
       "type": "manager",
       "id": 14
     },
@@ -46,6 +27,13 @@
       "email": "elvina@mail.com",
       "type": "manager",
       "id": 15
+    },
+    {
+      "email": "xheni1@gmail.com",
+      "username": "Xheni",
+      "password": "xheni12345678",
+      "type": "user",
+      "id": 16
     }
   ],
   "events": [
@@ -87,7 +75,7 @@
       "participants": "8",
       "date": "2020-09-21",
       "id": 5,
-      "approved": "0"
+      "approved": "declined"
     },
     {
       "eventType": "Wedding Event",
@@ -167,7 +155,7 @@
       "participants": "",
       "date": "",
       "id": 14,
-      "approved": "0"
+      "approved": "approved"
     },
     {
       "eventType": "Wedding Event",

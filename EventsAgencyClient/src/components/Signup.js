@@ -62,7 +62,7 @@ class Signup extends React.Component {
     } else {
       return (
         <>
-        
+
           <form className="signup-form" onSubmit={this.onFormSubmit}>
             <div className="row">
               <div className="col-md-4 col-sm-4 col-md-4 mx-auto">

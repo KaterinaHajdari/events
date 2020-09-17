@@ -30,8 +30,8 @@ export const loginUserLocalStorage = savedUserValues => async dispatch=>{
    dispatch({type:"LOGIN_SUCCESS", payload:savedUserValues})
 }
 
-export const adminLogOut =()=> dispatch =>{
-   dispatch({type:"ADMIN_LOG_OUT"});
+export const userLogOut =()=> dispatch =>{
+   dispatch({type:"USER_LOG_OUT"});
 }
  
 

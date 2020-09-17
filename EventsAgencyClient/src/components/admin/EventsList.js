@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-
-
-import events from "../../redux/apis/events";
 import { Table } from "reactstrap";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+
+import events from "../../redux/apis/events";
 import {
   Collapse,
   Navbar,
@@ -48,7 +47,7 @@ class EventsList extends React.Component {
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink>
-                  <Link to="/Client">Clients</Link>
+                  <Link to="/dashboard/Client">Clients</Link>
                 </NavLink>
               </NavItem>
               <NavItem>

@@ -3,14 +3,14 @@ import { Input } from "reactstrap";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 
-import { editProfile } from "../../redux/actions/EditProfile";
+import { editProfile } from "../redux/actions/EditProfile";
 import { Button } from "reactstrap";
 
-import "../../css/Profile.css";
-import avatar from "../../avatar.png";
+import "../css/Profile.css";
+import avatar from "../avatar.png";
 
-import Loading from "../Loading";
-import Error from "../Error";
+import Loading from "./Loading";
+import Error from "./Error";
 import { connect } from "react-redux";
 
 class EditProfile extends React.Component {
@@ -18,6 +18,7 @@ class EditProfile extends React.Component {
     username: this.props.login.values.username,
     email: this.props.login.values.email,
     password: this.props.login.values.password,
+    type: this.props.login.values.type
   };
 
   setUsername = (event) => {
@@ -45,6 +46,7 @@ class EditProfile extends React.Component {
       username: this.state.username,
       email: this.state.email,
       password: this.state.password,
+      type: this.state.type
     };
     this.props.editProfile(this.props.login.values.id, editProfileNewValues);
   };
@@ -52,11 +54,14 @@ class EditProfile extends React.Component {
   render() {
     const loading = this.props.EditProfile.loading;
     const error = this.props.EditProfile.error;
+    const type = this.props.login.values.type;
 
     if (loading && error === null) {
       return <Loading />;
-    } else if (!loading && error === null) {
+    } else if (!loading && error === null && type === "user") {
       return <Redirect to="/events" />;
+    } else if (!loading && error === null && type === "admin") {
+      return <Redirect to="/Admin" />;
     } else if (loading && error !== null) {
       return <Error />;
     } else if (loading && error !== null) {
@@ -106,6 +111,7 @@ class EditProfile extends React.Component {
                   <Col>
                     <Col>
                       <Input
+                      type="password"
                         value={this.state.password}
                         onChange={this.setPassword}
                       ></Input>

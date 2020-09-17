@@ -14,9 +14,9 @@ export default function(state = {}, action){
         case "LOGIN_FAILED":{
             return {...state, loading: false, error: action.payload}
         }
-        case"ADMIN_LOG_OUT" :
+        case"USER_LOG_OUT" :
         return{
-            ...state, isLoggedIn:false, values:null
+            ...state, values: { id: 0 }
         }
         default:
             return state;
