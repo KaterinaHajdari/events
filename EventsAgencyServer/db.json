@@ -22,13 +22,6 @@
       "id": 14
     },
     {
-      "username": "manager5",
-      "password": "manager5",
-      "email": "elvina@mail.com",
-      "type": "manager",
-      "id": 15
-    },
-    {
       "email": "xheni1@gmail.com",
       "username": "Xheni",
       "password": "xheni12345678",
@@ -36,8 +29,8 @@
       "id": 16
     },
     {
+      "username": "katerina1",
       "email": "katerina@mail.com",
-      "username": "katerina",
       "password": "katerina",
       "type": "user",
       "id": 17
