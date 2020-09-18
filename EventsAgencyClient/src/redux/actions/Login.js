@@ -8,9 +8,11 @@ export const checkLoginValue = loginValues => async dispatch => {
     const response = await users.get("/users?username="+loginValues.username+"&password="+loginValues.password)
     .then(res => {
      if(loginValues.username===res.data[0].username && loginValues.password===res.data[0].password){
-        {/*
+        {
           localStorage.setItem("id", res.data[0].id);
-          localStorage.setItem("username", res.data[0].username);
+       
+          
+       /*   localStorage.setItem("username", res.data[0].username);
           localStorage.setItem("email", res.data[0].email);
           localStorage.setItem("type", "user");
           localStorage.setItem("password", res.data[0].password);
@@ -26,12 +28,16 @@ export const checkLoginValue = loginValues => async dispatch => {
 }
 
 
-export const loginUserLocalStorage = savedUserValues => async dispatch=>{
-   dispatch({type:"LOGIN_SUCCESS", payload:savedUserValues})
+export const loginWithLocalStorage = userId => async dispatch=>{
+   users.get(`/users/${userId}`).then(res=>{
+      dispatch({type: "LOGIN_SUCCESS",  payload: res.data[0]}); 
+   })
 }
 
 export const userLogOut =()=> dispatch =>{
    dispatch({type:"USER_LOG_OUT"});
 }
+
+
  
 

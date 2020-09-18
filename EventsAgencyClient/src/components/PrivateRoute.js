@@ -1,20 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
-import { loginUserLocalStorage } from "../redux/actions/Login";
+import { loginWithLocalStorage } from "../redux/actions/Login";
 import { Route, Redirect } from "react-router-dom";
 
 class PrivateRoute extends React.Component {
-  login = async () => {
-    const values = {
-      email: localStorage.getItem("email"),
-      password: localStorage.getItem("password"),
-      id: localStorage.getItem("id"),
-      username: localStorage.getItem("username"),
-      type: localStorage.getItem("type"),
-    };
+ 
 
-    await this.props.loginUserLocalStorage(values);
-  };
+  login = async () => {
+
+    await this.props.loginWithLocalStorage(localStorage.getItem('id'));
+
+}
 
   render() {
     const Component = this.props.component;
@@ -25,16 +21,14 @@ class PrivateRoute extends React.Component {
         render={(props) => {
           if (this.props.login.values.id !== 0) {
             return <Component {...props} />;
-          } else {
-            /*
-              else if(this.props.login.values.id===0 && typeof JSON.parse(localStorage.getItem("id"))==="number"){
-                  this.login();
-                  return <Component  {...props}/>
+          } else if(localStorage.getItem("id") !== null) {
+            this.login();
 
-              }
-            */
+                        return <Component {...props} />
+
+            }else{
             return <Redirect to={{ pathname: "/login" }} />;
-          }
+            }
         }}
       />
     );
@@ -46,6 +40,6 @@ function mapStateToProps(state) {
     login: state.login,
   };
 }
-export default connect(mapStateToProps, { loginUserLocalStorage })(
+export default connect(mapStateToProps, { loginWithLocalStorage })(
   PrivateRoute
 );

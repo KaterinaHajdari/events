@@ -39,7 +39,7 @@ class EditProfile extends React.Component {
     });
   };
 
-  onFormSubmit = (event) => {
+  onFormSubmit = async (event) => {
     event.preventDefault();
 
     const editProfileNewValues = {
@@ -48,7 +48,7 @@ class EditProfile extends React.Component {
       password: this.state.password,
       type: this.state.type
     };
-    this.props.editProfile(this.props.login.values.id, editProfileNewValues);
+    await this.props.editProfile(this.props.login.values.id, editProfileNewValues);
   };
 
   render() {
@@ -58,9 +58,7 @@ class EditProfile extends React.Component {
 
     if (loading && error === null) {
       return <Loading />;
-    } else if (!loading && error === null && type === "user") {
-      return <Redirect to="/events" />;
-    } else if (!loading && error === null && type === "admin") {
+    }  else if (!loading && error === null && type === "admin") {
       return <Redirect to="/Admin" />;
     } else if (loading && error !== null) {
       return <Error />;

@@ -50,13 +50,14 @@ class Header extends React.Component {
             </NavItem>
             <NavItem>
               <NavLink>
-                {
-                this.props.login.values&&this.props.login.values.id?
-                this.props.login.values.type === "admin" ? (
-                  <Link to="/Admin">Dashboard</Link>
-                ) : (
-                  <Link to="dashboard/manager-dashboard">Dashboard</Link>
-                ):null}
+
+                { this.props.login.values.type === "admin" && <Link to="/Admin">Dashboard</Link> }
+
+                { this.props.login.values.type === "manager" && <Link to="/dashboard/manager-dashboard">Dashboard</Link> }
+
+                { this.props.login.values.type === "user" && <Link to="/dashboard/user-dashboard">Dashboard</Link> }
+
+
               </NavLink>
             </NavItem>
             {this.props.login.values && this.props.login.values.id !== 0 ? (
