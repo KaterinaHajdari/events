@@ -34,6 +34,13 @@
       "password": "xheni12345678",
       "type": "user",
       "id": 16
+    },
+    {
+      "email": "katerina@mail.com",
+      "username": "katerina",
+      "password": "katerina",
+      "type": "user",
+      "id": 17
     }
   ],
   "events": [

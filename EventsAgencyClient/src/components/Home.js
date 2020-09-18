@@ -18,7 +18,8 @@ export default()=>{
 <div>
   
    
-    <img src={HomeImage} alt="Home" width="100%" height="500px" />
+    <img src={HomeImage} alt="Home" width="100%" height="500px" 
+    />
 
     <div className="container">
         <Row style={{"textAlign":"center", "margin":"40px"}} >
