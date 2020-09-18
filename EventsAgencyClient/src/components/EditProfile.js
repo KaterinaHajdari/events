@@ -15,11 +15,27 @@ import { connect } from "react-redux";
 
 class EditProfile extends React.Component {
   state = {
-    username: this.props.login.values.username,
-    email: this.props.login.values.email,
-    password: this.props.login.values.password,
-    type: this.props.login.values.type
+    username: undefined,
+    email: undefined,
+    password: undefined,
+    type: this.props.login.values.type,
   };
+  arrangeUsername = () => {
+    return this.state.username !==undefined
+      ? this.state.username
+      : this.props.login.values.username;
+  };
+  arrangeEmail = () => {
+    return this.state.email !==undefined
+      ? this.state.email
+      : this.props.login.values.email;
+  };
+  arrangePassword = () => {
+    return this.state.password !==undefined
+      ? this.state.password
+      : this.props.login.values.password;
+  };
+  
 
   setUsername = (event) => {
     this.setState({
@@ -43,12 +59,15 @@ class EditProfile extends React.Component {
     event.preventDefault();
 
     const editProfileNewValues = {
-      username: this.state.username,
-      email: this.state.email,
-      password: this.state.password,
-      type: this.state.type
+      username: this.arrangeUsername(),
+      email: this.arrangeEmail(),
+      password: this.arrangePassword(),
+      type: this.state.type,
     };
-    await this.props.editProfile(this.props.login.values.id, editProfileNewValues);
+    await this.props.editProfile(
+      this.props.login.values.id,
+      editProfileNewValues
+    );
   };
 
   render() {
@@ -58,7 +77,7 @@ class EditProfile extends React.Component {
 
     if (loading && error === null) {
       return <Loading />;
-    }  else if (!loading && error === null && type === "admin") {
+    } else if (!loading && error === null && type === "admin") {
       return <Redirect to="/Admin" />;
     } else if (loading && error !== null) {
       return <Error />;
@@ -67,7 +86,7 @@ class EditProfile extends React.Component {
     } else {
       return (
         <div>
-          <Form className="profile-container" onSubmit={this.onFormSubmit}>
+          <Form className="profile-container" onSubmit={this.onFormSubmit} autocomplete="off">
             <Container>
               <Row>
                 <Col md={6}>
@@ -82,7 +101,7 @@ class EditProfile extends React.Component {
                   <Col>
                     <Col>
                       <Input
-                        value={this.state.username}
+                        value={this.arrangeUsername()}
                         onChange={this.setUsername}
                       ></Input>
                     </Col>
@@ -96,8 +115,9 @@ class EditProfile extends React.Component {
                   <Col>
                     <Col>
                       <Input
-                        value={this.state.email}
+                        value={this.arrangeEmail()}
                         onChange={this.setEmail}
+                        id="email"
                       ></Input>
                     </Col>
                   </Col>
@@ -109,9 +129,10 @@ class EditProfile extends React.Component {
                   <Col>
                     <Col>
                       <Input
-                      type="password"
-                        value={this.state.password}
+                        type="password"
+                        value={this.arrangePassword()}
                         onChange={this.setPassword}
+                        id="password"
                       ></Input>
                     </Col>
                   </Col>

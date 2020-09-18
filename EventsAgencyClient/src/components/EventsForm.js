@@ -45,6 +45,7 @@ class EventsForm extends React.Component {
   };
   onFormSubmit = (event) => {
     event.preventDefault();
+   
     const eventValues = {
       eventType: this.state.eventType,
       date: this.state.date,
@@ -138,6 +139,7 @@ class EventsForm extends React.Component {
 
                 <Button
                   onClick={(e) => this.setState({ isOpen: true })}
+                  type="submit"
                   className=" btn btn-primary text-uppercase events-form"
                 >
                   {" "}

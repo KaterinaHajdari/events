@@ -1,10 +1,9 @@
 {
   "users": [
     {
-      "username": "user71",
-      "email": "user7@mail.com",
+      "username": "kati",
+      "email": "user71",
       "password": "user7",
-      "type": "user",
       "id": 9
     },
     {
@@ -29,7 +28,7 @@
       "id": 16
     },
     {
-      "username": "katerina1",
+      "username": "katerina",
       "email": "katerina@mail.com",
       "password": "katerina",
       "type": "user",
@@ -58,7 +57,6 @@
     }
   ],
   "events": [
-   
     {
       "eventType": "Wedding Event",
       "time": "",
@@ -103,6 +101,33 @@
       "date": "",
       "id": 15,
       "approved": "0"
+    },
+    {
+      "eventType": "Bussiness Event",
+      "date": "",
+      "time": "",
+      "participants": "466123",
+      "details": "",
+      "approved": 0,
+      "id": 16
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "",
+      "time": "",
+      "participants": "7000000000",
+      "details": "",
+      "approved": 0,
+      "id": 17
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-30",
+      "time": "22:26",
+      "participants": "4000",
+      "details": "test",
+      "approved": 0,
+      "id": 18
     }
   ]
 }

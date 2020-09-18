@@ -6,9 +6,9 @@ import { Route, Redirect } from "react-router-dom";
 class PrivateRoute extends React.Component {
  
 
-  login = async () => {
+  login =  () => {
 
-    await this.props.loginWithLocalStorage(localStorage.getItem('id'));
+     this.props.loginWithLocalStorage(localStorage.getItem('id'));
 
 }
 

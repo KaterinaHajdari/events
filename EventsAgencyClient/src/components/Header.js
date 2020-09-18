@@ -22,6 +22,7 @@ class Header extends React.Component {
   };
 
   render() {
+    console.log(this.props.login);
     return (
       <div>
         <Navbar className="Navbar" color="light" light expand="md">
