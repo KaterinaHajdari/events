@@ -1,5 +1,11 @@
 @media only screen and (max-width: 480px) {
+    .Footer{
+        background-color: #e8baba
+        ; 
+    }
     #footer #elements, #footer #social {
+        background-color: #e8baba
+        ;
       float:none; /* Ensure stacking */
       display:block; /* Ensure stacking */
       text-align:center; /* Ensure horizontal centering of all footer content */
