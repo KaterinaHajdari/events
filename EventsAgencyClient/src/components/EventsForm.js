@@ -15,6 +15,7 @@ class EventsForm extends React.Component {
     time: "",
     participants: "",
     details: "",
+   
     isOpen: false,
   };
   setEventType = (event) => {
@@ -50,6 +51,7 @@ class EventsForm extends React.Component {
       time: this.state.time,
       participants: this.state.participants,
       details: this.state.details,
+      
       approved: 0,
     };
     this.props.createEventReservation(eventValues);
@@ -168,6 +170,7 @@ class EventsForm extends React.Component {
 const mapStateToProps = (state) => {
   return {
     createEvent: state.CreateEvent,
+ 
   };
 };
 export default connect(mapStateToProps, { createEventReservation })(EventsForm);

@@ -1,10 +1,11 @@
 import users from '../apis/events';
+import events from '../apis/events';
 
 export const createEventReservation = eventValues => async dispatch => {
     
     dispatch({type: "EVENT_BEGIN"});
 
-    const response = await users.post("/events", eventValues)
+    const response = await events.post("/events", eventValues)
     .then(res => {
         dispatch({type: "EVENT_SUCCESS",  payload: eventValues});
     })

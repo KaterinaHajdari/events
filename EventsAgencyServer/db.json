@@ -34,93 +34,31 @@
       "password": "katerina",
       "type": "user",
       "id": 17
+    },
+    {
+      "email": "kati@mail.com",
+      "username": "kati",
+      "password": "1",
+      "type": "user",
+      "id": 18
+    },
+    {
+      "username": "xhadmin",
+      "password": "2",
+      "email": "xh@mail.com",
+      "type": "manager",
+      "id": 19
+    },
+    {
+      "username": "xhadmin",
+      "password": "2",
+      "email": "xh@mail.com",
+      "type": "manager",
+      "id": 20
     }
   ],
   "events": [
-    {
-      "eventType": "Birthday Event",
-      "date": "2020-09-14",
-      "time": "15:49",
-      "participants": "2",
-      "details": "",
-      "id": 1
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "01:02",
-      "participants": "7",
-      "date": "2020-09-06",
-      "id": 2,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Birthday Event",
-      "time": "05:03",
-      "participants": "7",
-      "date": "2020-09-28",
-      "id": 3,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "19:08",
-      "participants": "3",
-      "date": "2020-09-15",
-      "id": 4,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Birthday Event",
-      "time": "17:02",
-      "participants": "8",
-      "date": "2020-09-21",
-      "id": 5,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "13:02",
-      "participants": "15",
-      "date": "2020-09-30",
-      "id": 6,
-      "approved": "0"
-    },
-    {
-      "eventType": "Bussiness Event",
-      "time": "15:13",
-      "details": "",
-      "participants": "12",
-      "date": "2020-09-16",
-      "id": 7,
-      "approved": "0"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 8,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 9,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 10,
-      "approved": "declined"
-    },
+   
     {
       "eventType": "Wedding Event",
       "time": "",
