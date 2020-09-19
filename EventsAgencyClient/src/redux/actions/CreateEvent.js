@@ -1,4 +1,3 @@
-
 import events from '../apis/events';
 
 export const createEventReservation = eventValues => async dispatch => {
