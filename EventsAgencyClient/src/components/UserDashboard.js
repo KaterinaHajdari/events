@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import events from "../../redux/apis/events";
+import events from "../redux/apis/events";
+import { CheckUserId } from "../redux/actions/Login";
+
 import {
     Collapse,
     Navbar,
@@ -13,16 +15,70 @@ import {
 
   import { Table } from "reactstrap";
   import { Link } from "react-router-dom";
+
+
 class UserDashboard extends React.Component{
 
+
+
+
+
+    state = {
+        eventsList: [],
+      };
+
+      componentDidMount() {
+        events
+         // .get("/events?userId="+ this.props.login.values.id)
+          .get("/events?userId="+ localStorage.getItem("id"))
+    
+          .then((res) => {
+            this.setState({
+              eventsList: res.data,
+            });
+          });
+         // console.log("test: "+);
+    
+      } 
+      
     render(){
         return(
-            <div>
-                
-            </div>
+            
+            <div className="container2">
+            <Table hover borderless>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Participants</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+  
+                {this.state.eventsList.map((event) => (
+                  <tr key={event.id}>
+                    
+                    <td>{event.eventType}</td>
+                    <td>{event.date}</td>
+                    <td>{event.time}</td>
+                    <td>{event.participants}</td>
+                    <td>{event.details}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </Table>
+          </div>
+            
         )
     }
 
 }
 
-export default UserDashboard;
+
+
+
+  export default   UserDashboard;
+
+  

@@ -4,6 +4,7 @@
       "username": "kati",
       "email": "user71",
       "password": "user7",
+      "type": "user",
       "id": 9
     },
     {
@@ -64,68 +65,36 @@
       "participants": "",
       "date": "",
       "id": 11,
-      "approved": "declined"
+      "approved": "0",
+      "userId": 9
     },
     {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 12,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 13,
-      "approved": "0"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 14,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 15,
-      "approved": "0"
-    },
-    {
-      "eventType": "Bussiness Event",
-      "date": "",
-      "time": "",
-      "participants": "466123",
-      "details": "",
+      "eventType": "Birthday Event",
+      "date": "2020-09-02",
+      "time": "06:42",
+      "participants": "23",
+      "details": "23121",
+      "userId": "17",
       "approved": 0,
       "id": 16
     },
     {
-      "eventType": "Birthday Event",
-      "date": "",
-      "time": "",
-      "participants": "7000000000",
-      "details": "",
+      "eventType": "Wedding Event",
+      "date": "2020-09-23",
+      "time": "07:47",
+      "participants": "5",
+      "details": "iuiyt",
+      "userId": "9",
       "approved": 0,
       "id": 17
     },
     {
       "eventType": "Birthday Event",
-      "date": "2020-09-30",
-      "time": "22:26",
-      "participants": "4000",
-      "details": "test",
+      "date": "2020-10-02",
+      "time": "07:49",
+      "participants": "4",
+      "details": "uythgrfd",
+      "userId": "17",
       "approved": 0,
       "id": 18
     }
