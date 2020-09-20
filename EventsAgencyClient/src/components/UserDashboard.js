@@ -29,7 +29,7 @@ class UserDashboard extends React.Component{
 
       componentDidMount() {
         events
-         // .get("/events?userId="+ this.props.login.values.id)
+         
           .get("/events?userId="+ localStorage.getItem("id"))
     
           .then((res) => {

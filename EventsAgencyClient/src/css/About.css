@@ -5,7 +5,7 @@
   
   /* Bottom right text */
   .text-block {
-    position: absolute;
+    position: relative;
     bottom:350px;
     right: 100px;
     left:100px;
