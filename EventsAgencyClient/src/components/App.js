@@ -14,7 +14,7 @@ import Events from "./Events";
 
 
 import ManagerDashboard from "../components/manager/ManagerDashboard";
-import Header from "./Header"
+import Header from "./Header";
 import Dashboard from "./Dashboard";
 
 const App = () => {
@@ -31,13 +31,14 @@ const App = () => {
                 <Route path="/signup" component={Signup}/>
                 <Route path="/login" component={Login}/>
                 <Route path="/manager-dashboard" component={ManagerDashboard}></Route>
+                
 
                 <PrivateRoute path="/dashboard" component={Dashboard}/>
 
                 <Route path="/" exact component={Home}></Route>
 
-                <Route path="/manager-dashboard" component={ManagerDashboard}></Route>
-
+               
+                
                 <Route path="/home" component={Home}/>
 
 
