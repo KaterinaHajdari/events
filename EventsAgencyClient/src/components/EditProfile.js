@@ -2,16 +2,14 @@ import React from "react";
 import { Input } from "reactstrap";
 import { Container, Row, Col, Form } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
-
 import { editProfile } from "../redux/actions/EditProfile";
 import { Button } from "reactstrap";
-
-import "../css/Profile.css";
+import { connect } from "react-redux";
 import avatar from "../avatar.png";
-
 import Loading from "./Loading";
 import Error from "./Error";
-import { connect } from "react-redux";
+import "../css/Profile.css";
+
 
 class EditProfile extends React.Component {
   state = {
@@ -20,16 +18,19 @@ class EditProfile extends React.Component {
     password: undefined,
     type: this.props.login.values.type,
   };
+
   arrangeUsername = () => {
     return this.state.username !==undefined
       ? this.state.username
       : this.props.login.values.username;
   };
+
   arrangeEmail = () => {
     return this.state.email !==undefined
       ? this.state.email
       : this.props.login.values.email;
   };
+
   arrangePassword = () => {
     return this.state.password !==undefined
       ? this.state.password
@@ -85,16 +86,16 @@ class EditProfile extends React.Component {
       return <Error />;
     } else {
       return (
-        <div>
+        <div className="parent">
           <Form className="profile-container" onSubmit={this.onFormSubmit} autocomplete="off">
             <Container>
               <Row>
-                <Col md={6}>
+                <Col>
                   <img src={avatar} id="avatar" alt="avatar" />
                 </Col>
               </Row>
               <div className="contain">
-                <Row xs={2} md={4}>
+                <Row>
                   <Col>
                     <Col>Username:</Col>
                   </Col>
@@ -108,7 +109,7 @@ class EditProfile extends React.Component {
                   </Col>
                 </Row>
 
-                <Row xs={2} md={4}>
+                <Row>
                   <Col>
                     <Col>Email:</Col>
                   </Col>
@@ -122,7 +123,7 @@ class EditProfile extends React.Component {
                     </Col>
                   </Col>
                 </Row>
-                <Row xs={2} md={4}>
+                <Row>
                   <Col>
                     <Col> Password:</Col>
                   </Col>
@@ -137,11 +138,15 @@ class EditProfile extends React.Component {
                     </Col>
                   </Col>
                 </Row>
+
                 <Row>
+                  <Col>
+                  </Col>
                   <Col>
                     <Button id="editP-btn">Save Changes</Button>
                   </Col>
                 </Row>
+
               </div>
             </Container>
           </Form>

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link, Route} from "react-router-dom";
 import {
   Navbar,
   NavbarBrand,
+    Collapse,
+    NavbarToggler,
   Nav,
   NavItem,
   NavLink,
@@ -17,22 +19,36 @@ import { connect } from "react-redux";
 import { userLogOut } from "../redux/actions/Login";
 
 class Header extends React.Component {
+
+  state = {
+    isOpen: false
+  }
+
   logout = () => {
     this.props.userLogOut();
   };
 
+  toggle = () => {
+
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+
+  }
+
   render() {
-    console.log(this.props.login);
+
     return (
       <div>
         <Navbar className="Navbar" color="light" light expand="md">
           <NavbarBrand href="/">Logo</NavbarBrand>
-
-          <Nav className="ml-auto">
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink class="nav-item active">
+              <NavLink class="nav-item active" activeClassName>
                 {" "}
-                <Link to="/" activestyle={{ color: "white" }}>
+                <Link to="/" className="header_links" activestyle={{ color: "white" }}>
                   Home
                 </Link>
               </NavLink>
@@ -40,13 +56,13 @@ class Header extends React.Component {
             <NavItem>
               <NavLink>
                 {" "}
-                <Link to="/About">About Us</Link>
+                <Link to="/About" className="header_links">About Us</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink>
                 {" "}
-                <Link to="/Events"> Events</Link>
+                <Link to="/Events" className="header_links"> Events</Link>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -86,10 +102,11 @@ class Header extends React.Component {
             {(this.props.login.values && !this.props.login.values.id )||!this.props.login.values ? (
               <Button id="login-btn">
                 {" "}
-                <Link to="/login">Login</Link>
+                <Link to="/login" className="header_links">Login</Link>
               </Button>
             ) : null}
           </Nav>
+          </Collapse>
         </Navbar>
       </div>
     );

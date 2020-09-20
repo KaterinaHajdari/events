@@ -10,23 +10,23 @@ class Events extends React.Component {
   render() {
     return (
       <div>
-      
+
         <Container>
           <Row className="row-style">
-            <Col xs="3">
+            <Col lg="3" sm="12">
               <img
                 src={WeddingPhoto}
                 alt="weddingPhoto"
                 className="photoStyle"
               />
             </Col>
-            <Col xs="auto">
-              <div className="col-style">
+            <Col lg="9" sm="12" className="col-style">
+              <div className="col-content">
                 <h1>Wedding Day</h1>
                 <Link
                   to="/dashboard/eventsform"
                   className=" btn btn-primary text-uppercase events-link"
-                >
+                  >
                   RESERVE
                 </Link>
               </div>
@@ -34,8 +34,8 @@ class Events extends React.Component {
           </Row>
 
           <Row className="row-style">
-            <Col xs="9">
-              <div className="col-style">
+            <Col lg={{size:9, order: 1}} xs={{size: 12, order:2}} className="col-style">
+              <div className="col-content">
                 <h1>Bussiness Events</h1>
                 <Link
                   to="/dashboard/eventsform"
@@ -45,7 +45,7 @@ class Events extends React.Component {
                 </Link>
               </div>
             </Col>
-            <Col xs="3">
+            <Col lg={{size: 3, order: 2}} xs={{size:12, order: 1}}>
               {" "}
               <img
                 src={Bussiness}
@@ -56,7 +56,7 @@ class Events extends React.Component {
           </Row>
 
           <Row className="row-style">
-            <Col xs="3">
+            <Col lg="3" sm="12">
               <img
                 src={Birthday}
                 alt="birthdayPhoto"
@@ -64,8 +64,8 @@ class Events extends React.Component {
                 style={{ height: "90%" }}
               />
             </Col>
-            <Col xs="auto">
-              <div className="col-style">
+            <Col lg="9" sm="12" className="col-style">
+              <div className="col-content">
                 <h1>Birthday Party</h1>
                 <Link
                   to="/dashboard/eventsform"
