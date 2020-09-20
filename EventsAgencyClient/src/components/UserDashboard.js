@@ -15,7 +15,7 @@ import {
 
   import { Table } from "reactstrap";
   import { Link } from "react-router-dom";
-
+  import { Alert } from 'reactstrap';
 
 class UserDashboard extends React.Component{
 
@@ -44,8 +44,9 @@ class UserDashboard extends React.Component{
     render(){
         return(
             
-            <div className="container2">
-            <Table hover borderless>
+            <div className="container2" style={{ textAlign: "center", margin: "150px" ,}}>
+               <Alert color="success">
+            <Table hover borderless >
               <thead>
                 <tr>
                   <th>Type</th>
@@ -69,6 +70,7 @@ class UserDashboard extends React.Component{
                 ))}
               </tbody>
             </Table>
+            </Alert>
           </div>
             
         )
