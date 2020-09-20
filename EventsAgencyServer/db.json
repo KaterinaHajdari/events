@@ -97,6 +97,16 @@
       "userId": "17",
       "approved": 0,
       "id": 18
+    },
+    {
+      "eventType": "Bussiness Event",
+      "date": "2020-10-10",
+      "time": "10:50",
+      "participants": "100",
+      "details": "test",
+      "userId": "9",
+      "approved": 0,
+      "id": 19
     }
   ]
 }
