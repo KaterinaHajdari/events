@@ -3,11 +3,12 @@ import d from "./images/d.jpg";
 import About from "../css/About.css";
 const AboutUs = () => {
   return (
-    <div>
+    <div className="box">
       {" "}
-      <img src={d} alt="Home" width="100%" height="100%" />
-      <div class="responsive">
-        <div class="text-block1 ">
+     
+  
+     
+        <div className="text-block">
           <h1 id="aboutUs">Who we are </h1>
           <p>
             K & XH Event Planner is an event logistics and marketing company
@@ -23,7 +24,7 @@ const AboutUs = () => {
           
         </div>
       </div>
-    </div>
+   
   );
 };
 export default AboutUs;

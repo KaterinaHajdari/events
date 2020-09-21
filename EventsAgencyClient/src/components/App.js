@@ -10,9 +10,6 @@ import Signup from "./Signup";
 import Admin from "../components/admin/Admin";
 import Events from "./Events";
 
-
-
-
 import ManagerDashboard from "../components/manager/ManagerDashboard";
 import Header from "./Header";
 import Dashboard from "./Dashboard";
