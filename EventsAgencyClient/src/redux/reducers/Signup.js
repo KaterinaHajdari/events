@@ -1,8 +1,8 @@
 const initialState = {
-    loading: false,
+   
     
     values:{},
-    error: "",
+  
   };
 
 export default function(state = initialState, action){

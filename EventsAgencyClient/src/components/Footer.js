@@ -13,7 +13,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 library.add(faFacebookF, faInstagram, faTwitter);
 const Footer = (props) => {
   return (
-    <div className="Footer">
+    <div className="footer">
       <div className="container">
         <div className="row">
           <div className="col">
@@ -25,14 +25,6 @@ const Footer = (props) => {
           </div>
           <div className="col col-lg-2">
             <h6> Cel:04 256 478 </h6>
-          </div>
-          <div className="w-100"></div>
-          <div className="col">
-            <div className="socials">
-              <FontAwesomeIcon id="element" icon={["fab", "facebook-f"]} />
-              <FontAwesomeIcon id="element" icon={["fab", "instagram"]} />
-              <FontAwesomeIcon id="element" icon={["fab", "twitter"]} />
-            </div>
           </div>
         </div>
       </div>

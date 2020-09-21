@@ -1,17 +1,28 @@
 #login-btn {
-      color: #ffffff;
-      background-color: #e8baba !important;
-      border: #e8baba;
-      font-size: 16px;
-      padding: 10px 40px;
-      text-align: center;
-  }
-  
-  .header_links{
-      color: black;
-  }
-  
-  .header_links:hover{
-      text-decoration: none;
-      color: black;
-  }
+    color: #ffffff;
+    background-color: #e8baba !important;
+    border: #e8baba;
+    font-size: 16px;
+    padding: 10px 40px;
+    text-align: center;
+}
+.header_login_btn, .header_login_btn:hover{
+    color: black;
+    text-decoration: none;
+}
+.header_link_btn ,  .header_link_btn:hover {
+  color: black;
+  text-decoration: none;
+}
+.header_links{
+    color: black;
+}
+
+.header_links:hover{
+    text-decoration: none;
+    color: #e8baba;
+}
+.header_links:focus{
+  text-decoration: none;
+  color: #e8baba;
+}

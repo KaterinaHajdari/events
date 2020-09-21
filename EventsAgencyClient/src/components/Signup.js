@@ -53,16 +53,15 @@ class Signup extends React.Component {
   render() {
     const loading = this.props.signup.loading;
     const error = this.props.signup.error;
-    if (loading & (error === null)) {
+    if (loading && error === null) {
       return <Loading />;
-    } else if (!loading & (error === null)) {
+    } else if (loading === false && error === null) {
       return <Redirect to="/login" />;
-    } else if (!loading & (error != null)) {
+    } else if (loading === false && error != null) {
       return <Error />;
     } else {
       return (
         <>
-
           <form className="signup-form" onSubmit={this.onFormSubmit}>
             <div className="row">
               <div className="col-md-4 col-sm-4 col-md-4 mx-auto">

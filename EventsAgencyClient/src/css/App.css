@@ -1,0 +1,15 @@
+.app_parent{
+   /*  display: flex; */
+    min-height: 94vh;
+   /*  flex-direction: column; */
+/*     justify-content: space-between
+ */}
+/* .app_parent{
+  
+    min-height: 100%;
+    margin: 0 auto -50px;
+}
+.footer,
+.push {
+  height: 50px;
+} */

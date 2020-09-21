@@ -47,7 +47,7 @@ class Login extends React.Component {
       !loading &&
       error === null &&
       !isLoggedIn &&
-      this.props.login.values&&
+      this.props.login.values &&
       this.props.login.values.type === "user"
     ) {
       return <Redirect to="/events" />;
@@ -55,18 +55,20 @@ class Login extends React.Component {
       !loading &&
       error === null &&
       !isLoggedIn &&
-      this.props.login.values&&
+      this.props.login.values &&
       this.props.login.values.type === "manager"
     ) {
-      return <Redirect to="/manager-dashboard" />;
-    } else if (!loading && error === null && this.props.login.values&&this.props.login.values.type==="admin") {
+      return <Redirect to="/dashboard/manager-dashboard" />;
+    } else if (
+      !loading &&
+      error === null &&
+      this.props.login.values &&
+      this.props.login.values.type === "admin"
+    ) {
       return <Admin />;
-    } else if (loading && error !== null) {
-      return <Error />;
     } else {
       return (
         <div>
-        
           <form class="form" onSubmit={this.onFormSubmit}>
             <div class="row">
               <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
@@ -84,6 +86,12 @@ class Login extends React.Component {
                         autofocus
                         value={this.state.username}
                         onChange={this.setUsername}
+                        style={{
+                          border:
+                            loading === false && error !== null
+                              ? "1px solid red"
+                              : "1px solid #CED4DA",
+                        }}
                       />
                       <label for="username"></label>
                     </div>
@@ -97,6 +105,12 @@ class Login extends React.Component {
                         required
                         value={this.state.password}
                         onChange={this.setPassword}
+                        style={{
+                          border:
+                            loading === false && error !== null
+                              ? "1px solid red"
+                              : "1px solid #CED4DA",
+                        }}
                       />
                       <label for="password"></label>
                     </div>

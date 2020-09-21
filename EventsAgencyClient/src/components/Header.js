@@ -68,11 +68,11 @@ class Header extends React.Component {
             <NavItem>
               <NavLink>
 
-                { this.props.login.values.type === "admin" && <Link to="/Admin">Dashboard</Link> }
+                { this.props.login.values.type === "admin" && <Link to="/Admin" className="header_links">Dashboard</Link> }
 
-                { this.props.login.values.type === "manager" && <Link to="/dashboard/manager-dashboard">Dashboard</Link> }
+                { this.props.login.values.type === "manager" && <Link to="/dashboard/manager-dashboard" className="header_links">Dashboard</Link> }
 
-                { this.props.login.values.type === "user" && <Link to="/dashboard/user-dashboard">Dashboard</Link> }
+                { this.props.login.values.type === "user" && <Link to="/dashboard/user-dashboard" className="header_links">Dashboard</Link> }
 
 
               </NavLink>
@@ -85,24 +85,24 @@ class Header extends React.Component {
 
                 <DropdownMenu right>
                   <DropdownItem>
-                    <Link to="/dashboard/editProfile"> Profile</Link>
+                    <Link to="/dashboard/editProfile" className="header_links"> Profile</Link>
                   </DropdownItem>
                   <DropdownItem divider />
                   {this.props.login.values &&
                   this.props.login.values.type === "admin" ? (
                     <DropdownItem>
-                      <Link to="/dashboard/addmanager">Add Manager</Link>
+                      <Link to="/dashboard/addmanager" className="header_links">Add Manager</Link>
                     </DropdownItem>
                   ) : null}
                   <DropdownItem divider />
-                  <DropdownItem onClick={this.logout}>LogOut</DropdownItem>
+                  <DropdownItem onClick={this.logout} className="header_links">LogOut</DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             ) : null}
             {(this.props.login.values && !this.props.login.values.id )||!this.props.login.values ? (
               <Button id="login-btn">
                 {" "}
-                <Link to="/login" className="header_links">Login</Link>
+                <Link to="/login" className="header_login_btn">Login</Link>
               </Button>
             ) : null}
           </Nav>

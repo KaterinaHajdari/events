@@ -6,9 +6,8 @@ const AboutUs = () => {
     <div className="box">
       {" "}
      
-  
-     
-        <div className="text-block">
+ 
+        <div class="text-block container">
           <h1 id="aboutUs">Who we are </h1>
           <p>
             K & XH Event Planner is an event logistics and marketing company
@@ -21,7 +20,15 @@ const AboutUs = () => {
             make its profit margins. This ensures that our clients list, which
             is constantly growing, make regular use of our services.
           </p>
-          
+          <br></br>
+          <p>
+            Our team understands that a properly executed event can be leveraged
+            to support an organization’s strategic vision, incorporated into a
+            company’s marketing plan, or used to build networks and client
+            loyalty. For a long time our capable, experienced group has aced
+            incalculable festivals – weddings, corporate, occasions, birthday
+            celebrations, meals and that’s only the tip of the iceberg.
+          </p>
         </div>
       </div>
    
