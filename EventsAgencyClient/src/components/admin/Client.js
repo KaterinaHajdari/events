@@ -1,15 +1,7 @@
 import React,{ useState} from "react";
 import "../../css/Admin.css";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
 
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -20,8 +12,7 @@ import {
   NavLink
 } from "reactstrap";
 import AdminHeader from "./AdminHeader";
-import FetchUser from'../FetchUser'
-
+import FetchUser from'../FetchUser';
 const Client=(props)=> {
   const [dropdownOpen, setOpen] = useState(false);
 
