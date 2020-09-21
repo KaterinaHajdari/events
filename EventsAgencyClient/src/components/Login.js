@@ -47,6 +47,7 @@ class Login extends React.Component {
       !loading &&
       error === null &&
       !isLoggedIn &&
+      this.props.login.values&&
       this.props.login.values.type === "user"
     ) {
       return <Redirect to="/events" />;
@@ -54,10 +55,11 @@ class Login extends React.Component {
       !loading &&
       error === null &&
       !isLoggedIn &&
+      this.props.login.values&&
       this.props.login.values.type === "manager"
     ) {
       return <Redirect to="/manager-dashboard" />;
-    } else if (!loading && error === null && isLoggedIn) {
+    } else if (!loading && error === null && this.props.login.values&&this.props.login.values.type==="admin") {
       return <Admin />;
     } else if (loading && error !== null) {
       return <Error />;

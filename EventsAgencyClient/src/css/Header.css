@@ -1,37 +1,17 @@
-
-.header{  
-     
-     top:10px;
-     left:5px;
-      margin: auto;
-      width: 100%;
-      display:flex;
-    position: static;
-      
-
-}
-
-.NavLink{
-      color:#ffffff !important
-}
 #login-btn {
-    color: #ffffff;
+      color: #ffffff;
       background-color: #e8baba !important;
       border: #e8baba;
       font-size: 16px;
       padding: 10px 40px;
       text-align: center;
-      
-}
-
-
-
-.show-nav {
-      height: 120px;
   }
   
+  .header_links{
+      color: black;
+  }
   
-  
-  
-     
-  
+  .header_links:hover{
+      text-decoration: none;
+      color: black;
+  }

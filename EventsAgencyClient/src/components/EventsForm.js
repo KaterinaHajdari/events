@@ -15,8 +15,20 @@ class EventsForm extends React.Component {
     time: "",
     participants: "",
     details: "",
+    userId: "",
+
     isOpen: false,
   };
+
+  componentDidMount() {
+    this.setState({ userId: localStorage.getItem("id") });
+  }
+
+
+
+
+
+
   setEventType = (event) => {
     this.setState({
       eventType: event.target.value,
@@ -44,12 +56,15 @@ class EventsForm extends React.Component {
   };
   onFormSubmit = (event) => {
     event.preventDefault();
+
     const eventValues = {
       eventType: this.state.eventType,
       date: this.state.date,
       time: this.state.time,
       participants: this.state.participants,
       details: this.state.details,
+      userId: this.state.userId,
+
       approved: 0,
     };
     this.props.createEventReservation(eventValues);
@@ -58,7 +73,7 @@ class EventsForm extends React.Component {
   render() {
     return (
       <div>
-     
+
         <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
           <div class="card card-signin my-5">
             <div class="card-body">
@@ -136,6 +151,7 @@ class EventsForm extends React.Component {
 
                 <Button
                   onClick={(e) => this.setState({ isOpen: true })}
+                  type="submit"
                   className=" btn btn-primary text-uppercase events-form"
                 >
                   {" "}
@@ -168,6 +184,7 @@ class EventsForm extends React.Component {
 const mapStateToProps = (state) => {
   return {
     createEvent: state.CreateEvent,
+
   };
 };
 export default connect(mapStateToProps, { createEventReservation })(EventsForm);

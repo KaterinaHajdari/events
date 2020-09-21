@@ -1,19 +1,17 @@
 import React, { useState } from "react";
-import Header from "../Header";
-
-import events from "../../redux/apis/events";
 import { Table } from "reactstrap";
 import { connect } from "react-redux";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+import events from "../../redux/apis/events";
 import {
   Collapse,
   Navbar,
-  
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink
+  NavLink,
 } from "reactstrap";
 
 class EventsList extends React.Component {
@@ -23,7 +21,7 @@ class EventsList extends React.Component {
 
   componentDidMount() {
     events
-      .get("/events?approved=0")
+      .get("/events?approved=approved")
 
       .then((res) => {
         this.setState({
@@ -33,45 +31,56 @@ class EventsList extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+    console.log(this.state.eventsList);
     return (
       <>
-        <Header/>
+
 
         <h4 id="title">Site Administration</h4>
         <div className="mini-nav">
-      <Navbar color="light" light expand="md">
-        <NavbarBrand > <Link to="/Admin">Managers</Link></NavbarBrand>
-       
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink><Link to="/Client">Clients</Link></NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>Events</NavLink>
-            </NavItem>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand>
+              {" "}
+              <Link to="/Admin">Managers</Link>
+            </NavbarBrand>
+
+            <Nav className="mr-auto" navbar>
+              <NavItem>
+                <NavLink>
+                  <Link to="/dashboard/Client">Clients</Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>Events</NavLink>
+              </NavItem>
             </Nav>
-          
-            </Navbar>
-      </div>
+          </Navbar>
+        </div>
         <div className="container2">
-          {this.state.eventsList.map((event) => (
-            <li id={event.id}>
-              Type: {event.eventType}{" "}
-              <span style={{ display: "inline-block", width: "50px" }} />
-              Date: {event.date}{" "}
-              <span style={{ display: "inline-block", width: "50px" }} />
-              Time: {event.time}{" "}
-              <span style={{ display: "inline-block", width: "50px" }} />
-              Participants: {event.participants}{" "}
-              <span style={{ display: "inline-block", width: "50px" }} />
-              Details: {event.details}{" "}
-              <span style={{ display: "inline-block", width: "50px" }} />
-              
-              
-               
-            </li>
-          ))}
+          <Table hover borderless>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Participants</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              {this.state.eventsList.map((event) => (
+                <tr key={event.id}>
+                  
+                  <td>{event.eventType}</td>
+                  <td>{event.date}</td>
+                  <td>{event.time}</td>
+                  <td>{event.participants}</td>
+                  <td>{event.details}</td>
+                </tr>
+              ))}
+            </tbody>
+          </Table>
         </div>
       </>
     );

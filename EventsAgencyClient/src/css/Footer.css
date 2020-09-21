@@ -1,17 +1,28 @@
-.Footer{
-    position: flex;
-    bottom: 0;
-    width: 100%;
+@media only screen and (max-width: 480px) {
+    .Footer{
+        background-color: #e8baba
+        ; 
+    }
+    #footer #elements, #footer #social {
+        background-color: #e8baba
+        ;
+      float:none; /* Ensure stacking */
+      display:block; /* Ensure stacking */
+      text-align:center; /* Ensure horizontal centering of all footer content */
+    }
 
-    height: 150px;
-    background-color: #e8baba;
-}
-h4, h6{
+    #footer #elements {
+      position:relative;
+      padding-top: 1rem;  /* Reserve vertical space for phone number */
+    }
+
+    #footer #elements p {
+      position:absolute; /* Causes the phone number to position above social buttons */
+      top:0;
+      left:0;
+      right:0;
+    }h4, h6{
     color: #000000;
 }
+  }
 
-#element{
-
-
-    margin:5px;
-}

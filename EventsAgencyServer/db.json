@@ -1,122 +1,63 @@
 {
   "users": [
     {
-      "username": "manager1",
-      "password": "manager1",
-      "type": "manager",
-      "id": 7
-    },
-    {
-      "username": "user2",
-      "email": "x.lici@yottaengineering.com",
-      "password": "user2",
-      "id": 8
-    },
-    {
-      "username": "user1",
-      "password": "user1",
-      "email": "x.lici@yottaengineering.com",
-      "type": "user",
-      "id": 8
-    },
-    {
-      "username": "user71",
-      "email": "user7@mail.com",
+      "username": "kati",
+      "email": "user71",
       "password": "user7",
+      "type": "user",
       "id": 9
     },
     {
-      "username": "admin",
+      "username": "admin1",
       "email": "admin@gmail.com",
       "password": "admin",
+      "type": "admin",
       "id": 10
+    },
+    {
+      "username": "manager",
+      "email": "xh@mail.com",
+      "password": "manager4",
+      "type": "manager",
+      "id": 14
+    },
+    {
+      "email": "xheni1@gmail.com",
+      "username": "Xheni",
+      "password": "xheni12345678",
+      "type": "user",
+      "id": 16
+    },
+    {
+      "username": "katerina",
+      "email": "katerina@mail.com",
+      "password": "katerina",
+      "type": "user",
+      "id": 17
+    },
+    {
+      "email": "kati@mail.com",
+      "username": "kati",
+      "password": "1",
+      "type": "user",
+      "id": 18
+    },
+    {
+      "username": "xhadmin",
+      "password": "2",
+      "email": "xh@mail.com",
+      "type": "manager",
+      "id": 19
+    },
+    {
+      "username": "xhadmin",
+      "password": "2",
+      "email": "xh@mail.com",
+      "type": "manager",
+      "id": 20
     }
   ],
   "events": [
-    {
-      "eventType": "Birthday Event",
-      "date": "2020-09-14",
-      "time": "15:49",
-      "participants": "2",
-      "details": "",
-      "id": 1
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "01:02",
-      "participants": "7",
-      "date": "2020-09-06",
-      "id": 2,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Birthday Event",
-      "time": "05:03",
-      "participants": "7",
-      "date": "2020-09-28",
-      "id": 3,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "19:08",
-      "participants": "3",
-      "date": "2020-09-15",
-      "id": 4,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Birthday Event",
-      "time": "17:02",
-      "participants": "8",
-      "date": "2020-09-21",
-      "id": 5,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "13:02",
-      "participants": "15",
-      "date": "2020-09-30",
-      "id": 6,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Bussiness Event",
-      "time": "15:13",
-      "details": "",
-      "participants": "12",
-      "date": "2020-09-16",
-      "id": 7,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Wedding Event",
-      "date": "",
-      "time": "",
-      "participants": "",
-      "details": "",
-      "approved": 0,
-      "id": 8
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 9,
-      "approved": "declined"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 10,
-      "approved": "declined"
-    },
     {
       "eventType": "Wedding Event",
       "time": "",
@@ -124,43 +65,48 @@
       "participants": "",
       "date": "",
       "id": 11,
-      "approved": "approved"
+      "approved": "0",
+      "userId": 9
+    },
+    {
+      "eventType": "Birthday Event",
+      "date": "2020-09-02",
+      "time": "06:42",
+      "participants": "23",
+      "details": "23121",
+      "userId": "17",
+      "approved": 0,
+      "id": 16
     },
     {
       "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 12,
-      "approved": "approved"
+      "date": "2020-09-23",
+      "time": "07:47",
+      "participants": "5",
+      "details": "iuiyt",
+      "userId": "9",
+      "approved": 0,
+      "id": 17
     },
     {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 13,
-      "approved": "approved"
+      "eventType": "Birthday Event",
+      "date": "2020-10-02",
+      "time": "07:49",
+      "participants": "4",
+      "details": "uythgrfd",
+      "userId": "17",
+      "approved": 0,
+      "id": 18
     },
     {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 14,
-      "approved": "approved"
-    },
-    {
-      "eventType": "Wedding Event",
-      "time": "",
-      "details": "",
-      "participants": "",
-      "date": "",
-      "id": 15,
-      "approved": "approved"
+      "eventType": "Bussiness Event",
+      "date": "2020-10-10",
+      "time": "10:50",
+      "participants": "100",
+      "details": "test",
+      "userId": "9",
+      "approved": 0,
+      "id": 19
     }
   ]
 }

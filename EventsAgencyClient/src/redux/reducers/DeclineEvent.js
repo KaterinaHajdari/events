@@ -1,4 +1,10 @@
-export default function(state={},action){
+const initialState = {
+    loading: false,
+    
+    values:{},
+    error: "",
+  };
+export default function(state=initialState,action){
     switch(action.type){
         case "DECLINE_EVENT_BEGIN":
             return{...state,loading:true, error:null}
